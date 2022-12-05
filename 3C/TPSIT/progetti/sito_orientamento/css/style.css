@@ -1,0 +1,218 @@
+#container {
+	background-color: lightblue;
+}
+
+#header {
+	border: 1px solid lightblue;
+	display: flex;
+	justify-content: center;
+	font-size: 15vh;
+	height: 15vh;
+	line-height: 15vh;
+	background-color: red;
+	color: black;
+}
+
+#orientamento {
+	border: 1px solid lightblue;
+	display: flex;
+	justify-content: center;
+	font-size: 10vh;
+	height: 10vh;
+	line-height: 10vh;
+	background-color: lightblue;
+	color: blue;
+	margin: 20px 0px 20px 0px;
+}
+
+#salone {
+	border: 1px solid lightblue;
+	display: flex;
+	justify-content: center;
+	font-size: 5vh;
+	height: 5vh;
+	line-height: 5vh;
+	background-color: lightblue;
+	color: red;
+}
+
+#scuola {
+	border: 1px solid lightblue;
+	display: flex;
+	justify-content: center;
+	font-size: 5vh;
+	height: 5vh;
+	line-height: 5vh;
+	background-color: lightblue;
+	color: red;
+	margin-top: 10vh;
+}
+
+#imgsalone {
+	display: flex;
+	justify-content: center;
+}
+
+#imgscuola {
+	display: flex;
+	justify-content: center;
+}
+
+#fotosalone {
+	width: 20%;
+}
+
+#fotoscuola {
+	width: 20%;
+}
+
+#titoloorario {
+	border: 1px solid lightblue;
+	display: flex;
+	justify-content: center;
+	font-size: 5vh;
+	height: 5vh;
+	line-height: 5vh;
+	background-color: red;
+	color: black;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+#ITCG {
+	display: flex;
+	justify-content: center;
+	background-color: #4B58B2;
+}
+
+#iconaITCG {
+	width: 10%;
+	margin-bottom: 2vh;
+}
+
+.quaddenina {
+	border: 1px solid black;
+	background-color: #007bff;
+	height: 50px;
+	color: white;
+	margin-left: 2vh;
+}
+
+#denina {
+	display: flex;
+	justify-content: center;
+	background-color: #4B58B2;
+}
+
+#iconaafm {
+	width: 70%;
+}
+
+#iconasia {
+	width: 75%;
+}
+
+#iconarim {
+	width: 70%;
+}
+
+#iconacat {
+	width: 70%;
+}
+
+#ITIS {
+	display: flex;
+	justify-content: center;
+	background-color: #00C23B;
+}
+
+#iconaITIS {
+	width: 10%;
+	margin-bottom: 2vh;
+}
+
+.quaditis {
+	border: 1px solid black;
+	background-color: #00BE30;
+	height: 50px;
+	color: white;
+	margin-left: 2vh;
+}
+
+#itis {
+	display: flex;
+	justify-content: center;
+	background-color: #00C23B;
+}
+
+#iconaelettro {
+	width: 70%;
+}
+
+#iconainfo {
+	width: 70%;
+}
+
+#IPC {
+	display: flex;
+	justify-content: center;
+	background-color: #FF9C00;
+}
+
+#iconaIPC {
+	width: 10%;
+	margin-bottom: 2vh;
+}
+
+
+.quadipc {
+	border: 1px solid black;
+	background-color: #FF8200;
+	height: 50px;
+	color: white;
+	margin-left: 2vh;
+}
+
+#ipc {
+	display: flex;
+	justify-content: center;
+	background-color: #FF9C00;
+}
+
+#iconacomm {
+	width: 70%;
+}
+
+#iconasanita{
+	width: 70%;
+}
+
+#IPSIA {
+	display: flex;
+	justify-content: center;
+	background-color: #FF6200;
+}
+
+#iconaIPSIA {
+	width: 10%;
+	margin-bottom: 2vh;
+}
+
+
+.quadipsia {
+	border: 1px solid black;
+	background-color: #B46C20;
+	height: 50px;
+	color: white;
+	margin-left: 2vh;
+}
+
+#ipsia {
+	display: flex;
+	justify-content: center;
+	background-color: #FF6200;
+}
+
+#iconalegno {
+	width: 70%;
+}
