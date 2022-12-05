@@ -1,0 +1,128 @@
+#!/bin/bash
+#Galesso Federico 3C 16/3/2022 Esercizio in preparazione in verifica
+#Creare uno script shell che, chiesto in input all'utente N (compreso tra 3 e 12) permetta di:
+# - Caricare il vettore alunni composto di N elementi (cognomi)
+# - Caricare il vettore voti composto di N elementi (votazioni), creando numeri random compresi tra 2 e 10
+# - Stampare entrambi i vettori
+# - Ordinare in modo crescente il vettore cognomi (mantenendo per ogni studente il proprio voto)
+# - Creare un terzo vettore contenente solo i voti sufficienti
+# - Dato il cognome di un alunno, visualizzare il relativo voto
+# - Contare il numero di voti insufficienti
+
+clear
+
+declare -a alunni
+declare -a voti
+declare -a sufficienze
+declare -a insufficienze
+
+chiediN(){
+	N=0
+	echo -n "Numero alunni: "
+	read N
+	while [[ $N -lt 3 ]] || [[ $N -gt 12 ]]
+	do
+		echo -n "Numero alunni: "
+		read N
+	done
+}
+
+creaRandom() {
+	local num
+	num=$(( RANDOM %($max-$min+1)+$min ))
+return $num
+}
+
+caricaAlunni(){
+	for (( i=0; i<N; i++ ))
+	do
+		echo -n "Cognome alunno $(( i+1 )): "
+		read alunni[i]
+	done
+}
+
+caricaVoti(){
+	for (( i=0; i<N; i++ ))
+	do
+		min=2
+		max=10
+		creaRandom $min $max
+		voti[i]=$?
+	done
+}
+
+stampaVet(){
+	for (( i=0; i<N; i++ ))
+	do
+		echo "Alunno ${alunni[i]} | Voto:  ${voti[i]}"
+	done
+}
+
+ordinaCognomi(){
+	j=${#alunni[*]}
+	flag=1
+	while [[ $flag -eq 1 ]]
+	do
+		flag=0
+		for ((i=0; i<$(( j-1 )); i++ ))
+		do
+			if [[ ${alunni[i]} > ${alunni[i+1]} ]]
+			then
+				tmp=${alunni[i]}
+				alunni[i]=${alunni[i+1]}
+				alunni[i+1]=$tmp
+				
+				tmp=${voti[i]}
+				voti[i]=${voti[i+1]}
+				voti[i+1]=$tmp
+				flag=1
+			fi
+		done
+		j=$(( j-1 ))
+	done
+	echo "Cognomi ordinati ${alunni[*]}"
+}
+
+cercaCognome(){
+	echo -n "Inserisci il nome di un'alunno: "
+	read nome
+	for ((i=0; i<N; i++ ))
+	do
+	if [[ $nome == ${alunni[i]} ]]
+	then
+		echo "Alunno ${alunni[i]} | Voto:  ${voti[i]}"
+	fi
+	done
+}
+
+contaSuf(){
+	for (( i=0;i<$N;i++ ))
+	do
+		if [[ ${voti[i]} -ge 6 ]]
+		then
+			echo "Alunno ${alunni[i]} | Voto: ${voti[i]}"
+			sufficienze[i]=${voti[i]} 
+		fi
+	done
+	echo "Elenco voti sufficienti: ${sufficienze[*]}"
+}
+
+contaInsuf(){
+	for (( i=0;i<$N;i++ ))
+	do
+		if [[ ${voti[i]} -lt 6 ]]
+		then
+			echo "Alunno ${alunni[i]} | Voto: ${voti[i]}"
+			insufficienze[i]=${voti[i]} 
+		fi
+	done
+	echo "Elenco voti insufficienti: ${insufficienze[*]}"
+}
+chiediN
+caricaAlunni
+caricaVoti
+stampaVet
+ordinaCognomi
+cercaCognome
+contaSuf
+contaInsuf
