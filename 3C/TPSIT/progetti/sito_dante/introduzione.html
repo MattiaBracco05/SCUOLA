@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS - FOOTER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- HTML:5 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracco-Minetti Mostra Dante</title>
+</head>
+
+<body>
+    <div class="container-fluid sfondo">
+
+        <!-- INIZIO DELLA NAVBAR -->
+        <div class="row fixed-top">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark coloreNav">
+                    <a class="navbar-brand text-white">MOSTRA DANTE</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                            <li class="nav-item active"><a class="nav-link">INTRODUZIONE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./piemonte.html">DANTE IN PIEMONTE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./particolari.html">PARTICOLARI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./ringraziamenti.html">RINGRAZIAMENTI</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- FINE NAVBAR -->
+
+        <!-- TITOLO -->
+        <div class="row margineInizio">
+            <div class="col-12 titolo" style="font-size: 4vw;" >INTRODUZIONE</div>
+        </div>
+
+        <!-- IMMAGINE E TESTO 1 -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 mt-3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sandro_Botticelli_-_La_Carte_de_l%27Enfer.jpg/1200px-Sandro_Botticelli_-_La_Carte_de_l%27Enfer.jpg" width="100%" alt="Raffigurazione dell' inferno descritto da Dante"></div>
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 descrizione2 mt-3">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                    over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. of ethics, very popular during the Renaissance.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3 IMMAGINI E TESTO https://www.forlipedia.it/site/wp-content/uploads/2021/09/mostra-dante-romagnoli-pergamena.jpg -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 mt-3">
+                <div id="dante" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#dante" data-slide-to="0" class="active"></li>
+                        <li data-target="#dante" data-slide-to="1"></li>
+                        <li data-target="#dante" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="data:image/jpeg;base64,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"
+                                alt="Dante vicino ad una pergamena sulla quale è scritto l' inizio della Divina Commedia">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.forlipedia.it/site/wp-content/uploads/2021/09/mostra-dante-romagnoli-pergamena.jpg" alt="Pergamena con i canti XX, XXI, XXII dell' Inferno ritrovata in una biblioteca a Forlì">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.forlipedia.it/site/wp-content/uploads/2021/09/Pergamena-miniata-del-XV-secolo-faceb.jpg" alt="Pergamena contenenete alcuni canti del Purgatorio ritrovata in una biblioteca a Forlì">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#dante" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#dante" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 descrizione2 mt-3">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+                    some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All
+                    the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                    structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
+            </div>
+        </div>
+
+        <!-- ULTIME 2 IMMAGINI E TESTO -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-4, col-xl-4 mt-3"><img src="https://www.ravennatoday.it/~media/horizontal-hi/57360393316365/dante-fiere-2.jpg" width="100%" alt="Dante vicino alle 3 fiere"></div>
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-4, col-xl-4 mt-3"><img src="https://londonse4.files.wordpress.com/2021/03/henry_holiday_-_dante_and_beatrice_-_google_art_project.jpg" width="100%" alt="Dante che ammira il passaggio di Beatrice e le sue dame"></div>
+            <div class="col-xs-12, col-sm-12, col-md-12, col-lg-4, col-xl-4 descrizione2 mt-3">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod viverra nisl, posuere ultricies justo. Nunc et magna sed quam faucibus aliquam et vitae tortor. Pellentesque porttitor molestie augue, et venenatis nibh mollis at. Mauris ultrices
+                    risus eget nisl vehicula, ut ornare arcu porttitor. Etiam fringilla accumsan felis imperdiet rutrum. Etiam viverra tempus dui vitae dignissim. Duis eleifend pellentesque finibus. Morbi sit amet tristique dui, eu auctor sapien. Phasellus
+                    tincidunt quam quis magna blandit aliquam. In et dapibus est. Donec non aliquam ex.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="w3hubs-footer">
+
+        <div class="w3hubs-icon">
+            <ul>
+                <li><img src="./img/crc.png" width="100%"></li>
+                <li><img src="./img/deinina.png" width="100%"></li>
+                <li><img src="./img/librarsi.jpeg" width="100%"></li>
+                <li><img src="./img/Logo Comune di Verzuolo MAXI definizione (2).png" width="100%"></li>
+                <li><img src="./img/logo700anniDante.jpg" width="100%"></li>
+                <li><img src="./img/logo_ACV_sigla_e_scritta sotto.jpg" width="100%"></li>
+
+            </ul>
+        </div>
+        <div class="w3hubs-nav">
+            <ul>
+                <li><a href="#">INTRODUZIONE</a></li>
+                <li><a href="./particolari.html">PARTICOLARI</a></li>
+                <li><a href="./piemonte.html">DANTE IN PIEMONTE</a></li>
+            </ul>
+        </div>
+        <div class="w3hubs-nav1">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./ringraziamenti.html">RINGRAZIAMENTI</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SCRITTA FINALE FOOTER -->
+    <div class="footer-end">
+        <p>3C ITIS G. RIVOIRA</p>
+    </div>
+
+    <!-- QUESTO VA SEMPRE AL FONDO ! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

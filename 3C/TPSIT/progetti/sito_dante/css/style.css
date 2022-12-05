@@ -1,0 +1,55 @@
+/* COLORE NAV BAR */
+
+.bordi {
+    border: 1px solid red;
+}
+
+.coloreNav {
+    background-color: #a35f1b;
+}
+
+.sfondo {
+    background-color: #ab4e08;
+}
+
+.margineInizio {
+    margin-top: 8vh;
+}
+
+.titolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8vh;
+    color: white;
+}
+
+.sottotitotlo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    color: black;
+}
+
+.descrizione {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    color: black;
+}
+
+.descrizione2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    color: black;
+}
