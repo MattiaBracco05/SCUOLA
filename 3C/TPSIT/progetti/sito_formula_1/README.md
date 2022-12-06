@@ -1,4 +1,4 @@
-#PROGETTO: SITO FORMULA 1
+# PROGETTO: SITO FORMULA 1
 
 Sito web a tema Formula 1 creato nel 2021 contenente:
 
