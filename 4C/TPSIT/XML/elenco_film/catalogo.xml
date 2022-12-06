@@ -1,0 +1,198 @@
+<!-- 4C Bracco Mattia - esercizio XML - catalogo film -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- CATALOGO (elenco di film) -->
+<!DOCTYPE Catalogo SYSTEM "catalogo.dtd">
+<catalogo>
+    <!-- FILM 1-->
+    <film id="l041">
+        <titolo>La donna che visse due volte</titolo>
+        <generi>
+            <genere value="thriller"/>
+        </generi>
+        <anno value="1958"/>
+        <registi>
+            <regista nome="Alfred Hitchcock"/>
+        </registi>
+        <attore nome="Kim Novak"/>
+        <attore nome="James Stewart"/> 
+        <attore nome="Barbara Bel Geddes"/>
+        <attore nome="Tom Helmore"/>
+        <attore nome="Ellen Corby"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="1"/>
+    </film>
+    <!-- FILM 2-->
+    <film id="l042">
+        <titolo>I 400 colpi</titolo>
+        <generi>
+            <genere value="drammatico"/>
+        </generi>
+        <anno value="1959"/>
+        <registi>
+            <regista nome="Francois Truffaut"/>
+        </registi>
+        <attore nome="Francois Truffaut"/>
+        <attore nome="Jean-Pierre Leaud"/>
+        <attore nome="Patrick Auffay"/>
+        <attore nome="Albert Rémy"/>
+        <attore nome="Claire Maurier"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="2"/>
+    </film>
+    <!-- FILM 3-->
+    <film id="l043">
+        <titolo>Sangue blu</titolo>
+        <generi>
+            <genere value="commedia"/>
+        </generi>
+        <anno value="1949"/>
+        <registi>
+            <regista nome="Robert Hamer"/>
+        </registi>
+        <attore nome="Alec Guinness"/>
+        <attore nome="Dennis Price"/>
+        <attore nome="Joan Greenwood"/>
+        <attore nome="Valerie Hobson"/>
+        <attore nome="Audrey Fildes"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="3"/>
+    </film>
+    <!-- FILM 4-->
+    <film id="l044">
+        <titolo>Il grande Lebowski</titolo>
+        <generi>
+            <genere value="commedia"/>
+        </generi>
+        <anno value="1998"/>
+        <registi>
+            <regista nome="Joel ed Ethan Coen"/>
+        </registi>
+        <attore nome="Jeff Bridges"/>
+        <attore nome="John Goodman"/>
+        <attore nome="Steve Buscemi"/>
+        <attore nome="Julianne Moore"/>
+        <attore nome="John Turturro"/>
+        <originale />
+        <formato value="DVD"/>
+        <voto value="4"/>
+    </film>
+    <!-- FILM 5-->
+    <film id="l045">
+        <titolo>Schinder's Lits</titolo>
+        <generi>
+            <genere value="guerra"/>
+        </generi>
+        <anno value="1993"/>
+        <registi>
+            <regista nome="Steven Spielberg"/>
+        </registi>
+        <attore nome="Liam Neeson"/>
+        <attore nome="Ralph Fiennes"/>
+        <attore nome="Ben Kingsley"/>
+        <attore nome="Embeth Davidtz"/>
+        <attore nome="Caroline Goodall"/>
+        <originale />
+        <formato value="DVD"/>
+        <voto value="5"/>
+    </film>
+    <!-- FILM 6-->
+    <film id="l046">
+        <titolo>Psyco</titolo>
+        <generi>
+            <genere value="horror"/>
+        </generi>
+        <anno value="1960"/>
+        <registi>
+            <regista nome="Alfred Hitchcock"/>
+        </registi>
+        <attore nome="Anthony Perkins"/>
+        <attore nome="Janet Leigh"/>
+        <attore nome="Vera Miles"/>
+        <attore nome="John Gavin"/>
+        <attore nome="Patricia Hitchcock"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="6"/>
+    </film>
+    <!-- FILM 7-->
+    <film id="l047">
+        <titolo>Fronte del porto</titolo>
+        <generi>
+            <genere value="drammatico"/>
+        </generi>
+        <anno value="1954"/>
+        <registi>
+            <regista nome="Elia Kazan"/>
+        </registi>
+        <attore nome="Marlon Brando"/>
+        <attore nome="Karl Malden"/>
+        <attore nome="Eva Marie Saint"/>
+        <attore nome="Rod Steiger"/>
+        <attore nome="Lee J. Cobb"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="7"/>
+    </film>
+    <!-- FILM 8-->
+    <film id="l048">
+        <titolo>E.T. l'extra-terrestre</titolo>
+        <generi>
+            <genere value="fantascienza"/>
+        </generi>
+        <anno value="1982"/>
+        <registi>
+            <regista nome="Steven Spielberg"/>
+        </registi>
+        <attore nome="Henry Thomas"/>
+        <attore nome="Drew Barrymore"/>
+        <attore nome="Robert MacNaughton"/>
+        <attore nome="Dee Wallace"/>
+        <attore nome="Peter Coyote"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="8"/>
+    </film>
+    <!-- FILM 9-->
+    <film id="l049">
+        <titolo>This Is Spinal Tap</titolo>
+        <generi>
+            <genere value="musical"/>
+        </generi>
+        <anno value="1984"/>
+        <registi>
+            <regista nome="Rob Reiner"/>
+        </registi>
+        <attore nome="Christopher Guest"/>
+        <attore nome="Rob Reiner"/>
+        <attore nome="Michael McKean"/>
+        <attore nome="Harry Shearer"/>
+        <attore nome="Fran Drescher"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="9"/>
+    </film>
+    <!-- FILM 10-->
+    <film id="l050">
+        <titolo>La casa 2</titolo>
+        <generi>
+            <genere value="horror"/>
+        </generi>
+        <anno value="1987"/>
+        <registi>
+            <regista nome="Sam Raimi"/>
+        </registi>
+        <attore nome="Bruce Campbell"/>
+        <attore nome="Ted Raimi"/>
+        <attore nome="Dan Hicks"/>
+        <attore nome="Robert Tapert"/>
+        <attore nome="Kassie DePaiva"/>
+        <originale />
+        <formato value="VHS"/>
+        <voto value="10"/>
+    </film>
+</catalogo>

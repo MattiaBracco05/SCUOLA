@@ -1,0 +1,40 @@
+<!-- Bracco Mattia 4C - CONVERTIRE IL FILE JSON DELLE MISURAZIONI DI PERA IN UN FILE XML-->
+<!-- Per questo esercizio sono partito dal file "formatted_measures.json" contenente alcune misurazioni di un dispositivo Pera utilizzato in una fase di test -->
+
+<!-- A differenza dei file JSON i file XML sono realizzatti attraverso dei tag <> </> -->
+<!-- Il primo tag che vado ad "aprire" è quello che vado a chiamare "misurazioni", all'interno di esso vado ad inserire altri tag: -->
+<misurazioni>
+    <!-- Il tag "<id>" contiene l'id della misurazione dle dispositivo Pera -->
+    <id>49947</id>
+    <!-- Il tag "<lora_device_id>" contiene l'id del dispositivo Pera (in questo caso l'ID 6 indica che i dati sono provenienti dalla Pera utilizzata per i test) -->
+    <lora_device_id>6</lora_device_id>
+    <!-- Il tag  "<measure_type_id>" contiene il tipo di misurazione periodica (in questo caso la Pera utilizzata per i test campiona ogni 10 minuti)-->
+    <measure_type_id>10</measure_type_id>
+    <!-- Il tag "<lora_message_id>" indica il messaggio radio che trasporta la misurazione (dato che la trasmissione radio di un messaggio contiene (e quindi trasmette) più misurazioni) -->
+    <lora_message_id>11577</lora_message_id>
+    <!-- Il tag "<valid_timestamp>" contiene un valore booleano che indica se la data presente nel tag "<measured_at>" è valida -->
+    <valid_timestamp>true</valid_timestamp>
+    <!-- Il tag "<data>" è il primo tag della struttura che contiene i valori delle misurazioni-->
+    <data>
+        <!-- Il tag "<sht30n1>" indica il sensore utilizzato per la misurazione della temperatura e dell'umidità -->
+        <sht30n1>
+            <!-- Il tag "<lowres>" indica che la misurazione effettuata è a bassa risoluzione -->
+            <lowres>
+                <!-- Il tag "<humidity>" contiene il valore %Rh dell'umidità presente nell'aria -->
+                <humidity>46</humidity>
+                <!-- Il tag "<temperature>" contiene il valore della temperatura [°C] rilevata moltiplicata per 10 (temperatura misurata 24.1 [°C]) -->
+                <temperature>241</temperature>
+            </lowres>
+        </sht30n1>
+        <!-- Il tag "<cpuTemperature>" contiene il valore della temperatura della CPU -->
+        <cpuTemperature>26</cpuTemperature>
+        <!-- Il tag "<supercapVoltage>" indica la tensione [V] presente nelle batterie moltiplicata per 10 (tensione nelle batterie 44.6 [V]) -->
+        <supercapVoltage>446</supercapVoltage>
+    </data>
+    <!-- Il tag "<measured_at>" indica quando è stata effettuata la misurazione -->
+    <measured_at>2022-09-10T17:10:00.000000Z</measured_at>
+    <!-- Il tag "<created_at>" indica quando è stata registrata la misurazione nel database (coincide con la ricezione del messaggio) -->
+    <created_at>2022-09-10T18:00:56.000000Z</created_at>
+    <!-- Il tag "<updated_at>" indica quando è stata trasmessa la misurazione -->
+    <updated_at>2022-09-10T18:00:56.000000Z</updated_at>
+</misurazioni>

@@ -1,0 +1,30 @@
+<!ELEMENT catalogo (film*)>
+
+<!ELEMENT film (titolo, generi, attori, registi, originale, formato, anno, voto?)>
+<!ATTLIST film id ID #REQUIRED>
+
+<!ELEMENT titolo (#PCDATA)>
+
+<!ELEMENT registi (regista+)>
+<!ELEMENT regista EMPTY>
+<!ATTLIST regista nome CDATA #REQUIRED>
+
+<!ELEMENT generi (genere+)>
+<!ELEMENT genere EMPTY>
+<!ATTLIST genere value CDATA #REQUIRED> 
+
+<!ELEMENT attori (attore*)>
+<!ELEMENT attore EMPTY>
+<!ATTLIST attore nome CDATA #REQUIRED>
+
+<!ELEMENT formato EMPTY>
+<!ATTLIST formato value (VHS | DVD) #REQUIRED>
+
+<!ELEMENT anno EMPTY>
+<!ATTLIST anno value CDATA #REQUIRED>
+
+<!ELEMENT originale EMPTY>
+<!ATTLIST originale value (si | no) "si">
+
+<!ELEMENT voto EMPTY>
+<!ATTLIST voto value (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) #REQUIRED>

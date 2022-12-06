@@ -1,0 +1,23 @@
+.titolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-family: monospace;
+    color: blue;
+}
+
+.header {
+    background-color: blue;
+    font-size: 4vh;
+}
+
+.table-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordi {
+    border: 1px solid black;
+}
