@@ -1,3 +1,3 @@
 # PROGETTO: SITO CODIFICHE
 
-Sito contenente informazioni teroiche sui tipi di codifiche
+Sito web contenente informazioni teroiche sui tipi di codifiche
