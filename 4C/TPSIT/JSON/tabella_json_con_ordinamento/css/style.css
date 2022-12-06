@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    overflow-y: auto;
+    overflow-x: overlay;
+    background-color: lightblue;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+th {
+    position: sticky;
+    top: 0px;
+    border: 1px solid black;
+    color: white;
+    background-color: darkblue;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid black;
+    color: black;
+    font-size: medium;
+    font: caption;
+    padding: 5px;
+}
+
+.effect:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.form-group {
+    margin: 0%;
+    padding: 0%;
+}
+
+.height {
+    height: 570px;
+}
+
+@media screen and (min-width: 400px) {
+    .um {
+        display: table-cell;
+    }
+}
