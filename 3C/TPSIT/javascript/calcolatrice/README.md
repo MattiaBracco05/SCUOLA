@@ -1,3 +1,3 @@
-# ES. POPUP BENVENUTO
+# ES. CALCOLATRICE
 
-Inserisco nome e cognome --> alert e scrivo in un div (già presente)
+Calcolarice con funzioni di base realizzata in una pagina web
