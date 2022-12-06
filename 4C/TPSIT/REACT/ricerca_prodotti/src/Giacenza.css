@@ -1,0 +1,56 @@
+.titoloGiacenza {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 5vh;
+}
+
+/* ----- STILE BUTTON CERCA GIACENZA ----- */
+.buttonCercaGiacenza {
+    border-radius: 12px;
+    width: 100%;
+    font-size: 5vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: white;
+    background-color: red;
+    margin-top: 1vh;
+}
+  
+.buttonCercaGiacenza:hover {
+    background-color: black; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.buttonCercaGiacenza:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ----- STILE TABELLA ----- */
+.tabella {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.tabGiacenzaHeader {
+    border: 2px  solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabGiacenzaValue {
+    border: 2px  solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

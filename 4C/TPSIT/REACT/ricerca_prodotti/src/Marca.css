@@ -1,0 +1,65 @@
+.titoloMarca {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 5vh;
+}
+
+/* ----- STILE BUTTON CERCA MARCA ----- */
+.buttonCercaMarca {
+    border-radius: 12px;
+    width: 60%;
+    font-size: 5vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: white;
+    background-color: blue;
+    margin-top: 1vh;
+}
+  
+/* ANIMAZIONE HOVER (QUANDO PASSO SOPRA CON IL MOUSE) */
+.buttonCercaMarca:hover {
+    background-color: black; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+/* ANIMAZIONE ACTIVE (QUANDO VIENE CLICCATO) */
+.buttonCercaMarca:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ----- STILE CASELLA DI RICERCA ----- */
+.textCerca {
+    font-size: 5vh;
+    border-radius: 2vh;
+    border-color: darkblue;
+}
+
+/* ----- STILE TABELLA ----- */
+.tabella {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.tabMarcaHeader {
+    border: 2px  solid blue;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabMarcaValue {
+    border: 2px  solid blue;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
