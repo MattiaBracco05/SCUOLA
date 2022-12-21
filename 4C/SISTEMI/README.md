@@ -3,6 +3,6 @@
 Cartella generale degli esercizi di #SISTEMI E RETI svolti il 4° anno
 
 Argomenti:
-- processi figli (fork)
-- memoria condivisa (shm)
-- semafori per la gestione della memoria condivisa
+- gestione dei processi figli
+- gestione della memoria condivisa
+- semafori per la gestione della sincronizzazione con la memoria condivisa
