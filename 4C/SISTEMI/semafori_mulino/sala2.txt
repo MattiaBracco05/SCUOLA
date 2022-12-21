@@ -1,0 +1,4 @@
+REGISTRO SALA 2
+NOME EVENTO: e2
+
+Partecipante Badge N.1 ID: 5587 età: 19
