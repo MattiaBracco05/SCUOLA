@@ -8,6 +8,7 @@ Argomenti:
 - calcoli
 - funzioni
 - procedure
+- char
 - stringhe
 - vettori
 - matrici
