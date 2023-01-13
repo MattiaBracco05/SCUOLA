@@ -1,4 +1,4 @@
-#Bracco Mattia 4C - Registrare altezze studenti
+#4C Bracco Mattia - Registrare altezze studenti
 MAX_ALTEZZA = 200
 MIN_ALTEZZA = 140
 MAX_ALUNNI = 20
