@@ -1,4 +1,5 @@
-#Bracco Mattia 4C - Tabelline
+#4C Bracco Mattia - Tabelline C --> py
+
 num1 = int(input("Inserisci il primo numero: "))
 num2 = int(input("Inserisci il secondo numero: "))
 
