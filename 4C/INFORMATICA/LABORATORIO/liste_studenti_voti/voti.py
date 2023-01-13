@@ -1,4 +1,4 @@
-#Bracco Mattia 4C - Realizzare grafico voti studenti
+#4C Bracco Mattia - Realizzare grafico voti studenti
 MAX_VOTI = 10
 MIN_VOTI = 0
 MAX_ALUNNI = 20
