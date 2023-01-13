@@ -14,4 +14,3 @@ Argomenti:
 - Reti elettriche AC
   - Potenza
   - Perdita sulla linea
-- Relazioni di laboratorio
