@@ -1,4 +1,4 @@
-#Bracco Mattia 4C - print
+#Bracco Mattia 4C - print e tipi di divisione fra numeri
 num1 = 15
 num2 = 7
 sout = "Numero 1: "+str(num1) +str(" (concatena stringa)")
