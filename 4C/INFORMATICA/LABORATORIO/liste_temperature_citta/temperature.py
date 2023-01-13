@@ -1,4 +1,4 @@
-#Bracco Mattia 4C - Temperature città
+#4C Bracco Mattia - Temperature città
 MAX_CITTA = 5
 MIN_CITTA = 1
 MAX_TEMP = 35
