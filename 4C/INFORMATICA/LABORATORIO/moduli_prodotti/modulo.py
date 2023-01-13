@@ -1,4 +1,4 @@
-#4C Bracco Mattia - modulo funzioni
+#4C Bracco Mattia - Modulo funzioni
 def calcolaSomma(N, prz, qta):
 	somma = 0
 	for i in range (N):
