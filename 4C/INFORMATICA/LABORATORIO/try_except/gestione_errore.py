@@ -1,3 +1,4 @@
+#4C BRACCO MATTIA - Gestione degli errory con try e except
 flag = False
 
 while flag == False:
