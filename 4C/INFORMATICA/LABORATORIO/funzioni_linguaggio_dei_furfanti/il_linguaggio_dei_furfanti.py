@@ -20,5 +20,4 @@ while uscita != 0:
 	testoInserito = input("\nInserisci il testo da tradurre: ")
 	testoTradotto = ""
 	traduci(testoInserito, testoTradotto)
-	uscita = int(input("\nDigitare 0 per temrinare: "))
-	
+	uscita = int(input("\nDigitare 0 per temrinare: "))	
