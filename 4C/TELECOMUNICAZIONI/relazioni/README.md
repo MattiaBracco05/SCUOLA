@@ -1,3 +1,3 @@
 # RELAZIONI
 
-Sottocartella cintenente le relazioni di laboratorio
+Sottocartella contenente le relazioni di laboratorio
