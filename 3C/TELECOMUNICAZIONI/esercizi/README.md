@@ -1,3 +1,1 @@
 # ESERCIZI
-
-Sottoartella contenente esercizi
