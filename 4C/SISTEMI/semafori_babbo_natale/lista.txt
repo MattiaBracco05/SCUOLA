@@ -1,5 +1,0 @@
-LISTA RICHIESTE DEI BAMBINI
-1: Il bambino 31913 desidera come regalo: 1
-2: Il bambino 31916 desidera come regalo: 2
-3: Il bambino 31914 desidera come regalo: 3
-4: Il bambino 31915 desidera come regalo: 4
