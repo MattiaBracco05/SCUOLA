@@ -1,2 +1,3 @@
 # SCUOLA
-In questo repository sono contenuti gli esercizi e i progetti realizzati a scuola
+
+Repository scolastico delle materie tecniche, delle materie di indirizzo e dei progetti realizzati
