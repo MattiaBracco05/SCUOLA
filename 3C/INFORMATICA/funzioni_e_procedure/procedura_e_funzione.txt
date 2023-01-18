@@ -1,4 +1,0 @@
-PROCEDURA
-	non restituisce nulla al main
-FUNZIONE
-	restituisce un (solo 1) valore al main
