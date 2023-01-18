@@ -1,3 +1,3 @@
 # APPUNTI
 
-Contiene gli appunti presi durante le videolezioni e alcuni screenshot della LIM
+Appunti presi durante le videolezioni e screenshot di appunti scritti dal professore sulla LIM
