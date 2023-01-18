@@ -1,7 +1,0 @@
-forma compatta per pulire il buffer della tastiera
-
-printf("inserisci un carattere: ");
-carattere=getchar();
-while(getchar()!='\n'); //forma compatta del while
-printf("%c", carattere);
-carattere1=getchar();
