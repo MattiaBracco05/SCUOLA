@@ -1,3 +1,3 @@
-# APPUNTI
+# APPUNTI 📝
 
 Dispense e presentazioni
