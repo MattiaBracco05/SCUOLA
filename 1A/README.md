@@ -1,3 +1,3 @@
 # 1A
 
-Cartella principale edel 1° anno
+Cartella principale del 1° anno
