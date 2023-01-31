@@ -1,4 +1,4 @@
-# ROUETER E SWITCH
+# ROUTER E SWITCH
 
 ### `Invio di PDU tramite comando ping a PC appartenenti alla stessa rete e a pc collegati su una rete esterna`
 
