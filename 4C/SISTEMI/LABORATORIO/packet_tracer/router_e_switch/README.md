@@ -7,4 +7,4 @@ Se il messaggio è da inviare ad un PC della stessa rete la PDU conterrà l'indi
 Se il messaggio è da inviare ad un PC situato in una rete esterna la PDU conterrà l'indirizzo MAC del router
 
 ## Cambio il nome nel terminale di un dispositivo (es. dello switch)
-digito `enable` --> `conf t` --> `hostname nomeDaUsare`
+premo `INVIO` fino a visualizzare il nome con il ">", poi digito `enable` --> `conf t` --> `hostname nomeDaUsare`
