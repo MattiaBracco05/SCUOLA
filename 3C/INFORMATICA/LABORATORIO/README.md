@@ -1,6 +1,6 @@
-# LABORATORIO
+# LABORATORIO 💻
 
-Argomenti:
+Argomenti principali:
 - cicli for
 - cicli while
 - calcoli
