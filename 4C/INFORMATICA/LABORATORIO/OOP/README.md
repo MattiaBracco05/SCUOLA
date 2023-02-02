@@ -1,6 +1,6 @@
 # OOP ~ Programmazione ad oggetti
 
-Argomenti:
+Argomenti principali:
 - liste
 - sottoliste
 - dizionari
