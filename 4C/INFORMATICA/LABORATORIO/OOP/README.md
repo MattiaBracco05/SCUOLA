@@ -1,4 +1,4 @@
-# OOP ~ Programmazione ad oggetti
+# OOP
 
 Argomenti principali:
 - liste
