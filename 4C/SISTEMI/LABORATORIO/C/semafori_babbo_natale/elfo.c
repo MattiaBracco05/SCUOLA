@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Semafori Babbo natale
-File elfo.c (lettore)
-*/
+//4C Bracco Mattia - Semafori Babbo natale - File elfo.c (lettore)
 
 #include<stdio.h>
 #include<stdlib.h>
