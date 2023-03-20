@@ -1,6 +1,5 @@
-/*
-Bracco Mattia 4C - N processi figli
-*/
+//Bracco Mattia 4C - N processi figli
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
