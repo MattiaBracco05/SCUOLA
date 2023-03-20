@@ -1,6 +1,5 @@
-/*
-Bracco Mattia 4C - Attesa del processo padre
-*/
+//Bracco Mattia 4C - Attesa del processo padre
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
