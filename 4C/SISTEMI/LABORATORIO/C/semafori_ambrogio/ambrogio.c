@@ -1,7 +1,5 @@
-/*
-4C Bracco Mattia - Ambrogio
-File Ambrogio
-*/
+//4C Bracco Mattia - Ambrogio - File Ambrogio
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
