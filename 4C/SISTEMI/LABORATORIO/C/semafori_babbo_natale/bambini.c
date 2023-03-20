@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Semafori Babbo natale
-File bambini.c (postino)
-*/
+//4C Bracco Mattia - Semafori Babbo natale - File bambini.c (postino)
 
 #include<stdio.h>
 #include<stdlib.h>
