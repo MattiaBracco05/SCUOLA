@@ -1,6 +1,5 @@
-/*
-Bracco Mattia 4C - Numero maggiore e numero minore generato random dai processi figli
-*/
+//Bracco Mattia 4C - Numero maggiore e numero minore generato random dai processi figli
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
