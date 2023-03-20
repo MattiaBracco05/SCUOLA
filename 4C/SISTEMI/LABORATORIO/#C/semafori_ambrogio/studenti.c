@@ -1,7 +1,5 @@
-/*
-4C Bracco Mattia - Ambrogio
-File studenti
-*/
+//4C Bracco Mattia - Ambrogio - File studenti
+
 #include <stdio.h>
 #include <stdlib.h>
 //LIBRERIE PER I PROCESSI
@@ -36,7 +34,7 @@ int main(){
 	//CREO LA MEMORIA CONDIVISA (3 celle di interi --> 1 per la sincronizzazione 2 per i carrelli) E 2 SEMAFORI
 	shmid = shmget(keyshm, sizeof(int)*3 , IPC_EXCL | 0666); 
 	semid = semget(keysem, 2,  IPC_EXCL | 0666);         
-  //controllo eventuali errori
+  	//controllo eventuali errori
 	if (shmid == -1 || semid == -1){
 		printf("Errore nella gestione della memoria o dei semafori");
 		exit(-1);
