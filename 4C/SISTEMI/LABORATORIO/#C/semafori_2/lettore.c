@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Semaforo
-File lettore
-*/
+//4C Bracco Mattia - Semaforo - File lettore
 
 //LIBRERIE
 #include <stdio.h>
