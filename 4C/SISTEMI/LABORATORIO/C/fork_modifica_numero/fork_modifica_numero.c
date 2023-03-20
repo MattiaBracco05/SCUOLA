@@ -1,7 +1,4 @@
-/*
-Bracco Mattia 4C
-Dato un numero processo padre e figlio lo modificano e lo stampano
-*/
+//Bracco Mattia 4C - Dato un numero processo padre e figlio lo modificano e lo stampano
 
 #include <stdio.h>
 #include <stdlib.h>
