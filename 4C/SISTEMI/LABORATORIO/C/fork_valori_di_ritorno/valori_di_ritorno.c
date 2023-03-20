@@ -1,7 +1,4 @@
-/*
-Bracco Mattia 4C
-Eseguire una fork e stampare il PID del processo padre e del processo figlio
-*/
+//Bracco Mattia 4C - Eseguire una fork e stampare il PID del processo padre e del processo figlio
 
 #include <stdio.h>
 #include <stdlib.h>
