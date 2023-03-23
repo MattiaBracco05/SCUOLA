@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Memoria condivisa lettore/scrittore stringhe
-File scrittore
-*/
+//4C Bracco Mattia - Memoria condivisa lettore/scrittore stringhe - File scrittore
 
 #include <stdio.h>
 #include <stdlib.h>
