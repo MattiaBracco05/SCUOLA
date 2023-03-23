@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - sgranocchiamo tutto
-File commensali
-*/
+//4C Bracco Mattia - sgranocchiamo tutto - File commensali
 
 #include <stdio.h>
 #include <stdlib.h>
