@@ -1,6 +1,5 @@
-/*
-Bracco Mattia 4C - Aresnio Lupin
-*/
+//Bracco Mattia 4C - Aresnio Lupin
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
