@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Memoria Condivisa lettore/scrittore su 2 file distinti
-File lettore
-*/
+//4C Bracco Mattia - Memoria Condivisa lettore/scrittore su 2 file distinti - File lettore
 
 //LIBRERIE PER I PROCESSI
 #include <stdio.h>
