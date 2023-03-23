@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Mulino
-File MuinoCC
-*/
+//4C Bracco Mattia - Mulino - File MuinoCC
 
 #include <stdio.h>
 #include <stdlib.h>
