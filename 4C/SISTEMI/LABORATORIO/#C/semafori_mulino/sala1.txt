@@ -1,4 +1,0 @@
-REGISTRO SALA 1
-NOME EVENTO: e1
-
-Partecipante Badge N.1 ID: 5586 età: 18
