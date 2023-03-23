@@ -1,7 +1,4 @@
-/*
-4C Bracco Mattia - Mulino
-File AmiciDelMulino
-*/
+//4C Bracco Mattia - Mulino - File AmiciDelMulino
 
 #include <stdio.h>
 #include <stdlib.h>
