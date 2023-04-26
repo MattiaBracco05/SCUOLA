@@ -12,3 +12,8 @@
      - Reparto E
      - Reparto F  
 - PARTE 2: CIDR (utilizzo di più indirizzi di classe C per raggiungere il numero di indirizzi IP necessari)
+   - 199.24.16.0
+   - 199.24.17.0
+   - 199.24.18.0
+   - 199.24.19.0
+   - `1024 indirizzi totali`
