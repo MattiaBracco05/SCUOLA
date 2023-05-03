@@ -12,6 +12,7 @@
 - `Particolarità`
 - Organizzazione anche nella visualizzazione Physical
 - Tencica di VLSM
+- Settaggio delle rotte del router
 - `Comandi`
 - Per impostare una rotta su un router:
   - 1 Aprire la schermata del router
