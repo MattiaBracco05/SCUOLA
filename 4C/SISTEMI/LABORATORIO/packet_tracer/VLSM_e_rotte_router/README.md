@@ -20,9 +20,8 @@
   - 4 Digitare `ip route {ip rete destinazione} {subnet mask} {link destinazione}` nel mio caso ip route 200.100.50.192 255.255.255.224 10.10.10.2
 ### - Per cancellare un comando errato:
   - 1 Digitare il comandio errato che è stato eseguito preceduto da un `no`
-### - Per copiare dalla memoria RAM alla memoria permanente le istruzioni assegnate al router
-
-(se non copio le istruzioni sulla memoria permanente quando andrò a spegnere il router perderò tutte le istruzioni assegnate):
+### - Per copiare dalla memoria RAM alla memoria permanente le istruzioni assegnate al router:
+(se non copio le istruzioni sulla memoria permanente quando andrò a spegnere il router perderò tutte le istruzioni assegnate)
   
   - 1 Aprire la schermata del router
   - 2 Digitare `enable`
