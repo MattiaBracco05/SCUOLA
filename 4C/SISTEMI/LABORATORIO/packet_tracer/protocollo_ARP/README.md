@@ -1,3 +1,5 @@
 # PROTOCOLLO ARP
-
-### - Simulazione su packet tracer del protocollo ARP
+## - Simulazione del protocollo ARP
+## `Componenti`
+- Switch
+- Router
