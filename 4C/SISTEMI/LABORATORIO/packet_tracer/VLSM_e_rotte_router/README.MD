@@ -17,5 +17,6 @@
   - 1 Aprire la schermata del router
   - 2 digitare `enable`
   - 3 digitare `conf t` per accendere in modalità di configurazione
-  
-  4 digitare `ip route {ip rete destinazione} {subnet mask} {link destinazione}` nel mio caso ip route 200.100.50.192 255.255.255.224 10.10.10.2
+  - 4 digitare `ip route {ip rete destinazione} {subnet mask} {link destinazione}` nel mio caso ip route 200.100.50.192 255.255.255.224 10.10.10.2
+- Per cancellare un comando errato:
+  - 1 digitare il comandio errato che è stato eseguito preceduto da un `no` 
