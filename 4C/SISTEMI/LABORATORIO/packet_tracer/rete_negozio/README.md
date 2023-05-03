@@ -6,7 +6,8 @@
 - Reparto Commerciale
 - Reparto Tecnologie
 ## `Componenti`
-- Switch Core
+- Switch
+- Router
 - Access Point
 ## `Particolarità`
 - Organizzazione anche nella visualizzazione Physical
