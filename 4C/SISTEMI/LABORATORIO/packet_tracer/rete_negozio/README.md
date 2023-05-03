@@ -1,12 +1,12 @@
 # RETE NEGOZIO
 
-### - Simulazione rete di un negozio
-- `Struttura`
+## - Simulazione rete di un negozio
+## `Struttura`
 - Reparto Acquisti
 - Reparto Commerciale
 - Reparto Tecnologie
-- `Componenti`
+## `Componenti`
 - Switch Core
 - Access Point
-- `Particolarità`
+## `Particolarità`
 - Organizzazione anche nella visualizzazione Physical
