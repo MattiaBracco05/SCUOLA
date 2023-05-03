@@ -6,14 +6,14 @@
 - Reparto B (50 host)
 - Reparto C (20 host)
 - Reparto D (20 host)
-- `Componenti`
+## `Componenti`
 - Switch
 - Router
-- `Particolarità`
+## `Particolarità`
 - Organizzazione anche nella visualizzazione Physical
 - Tencica di VLSM
 - Settaggio delle rotte del router
-- `Comandi`
+## `Comandi`
 - Per impostare una rotta su un router:
   - 1 Aprire la schermata del router
   - 2 digitare `enable`
