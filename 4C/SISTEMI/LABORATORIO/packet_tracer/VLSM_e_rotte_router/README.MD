@@ -1,6 +1,6 @@
 # VLSM e rotte dei router
 
-### - Simulazione di una rete con più router
+## - Simulazione di una rete con più router
 ## `Struttura`
 - Reparto A (120 host)
 - Reparto B (50 host)
