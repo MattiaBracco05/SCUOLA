@@ -1,4 +1,4 @@
-# RETE SCUOLA
+# RETE SCUOLA (Denina)
 ## - Simulazione della nostra rete scolastica
 ## `Struttura`
 - Laboratorio INFO-1
