@@ -8,5 +8,5 @@
 ## `Comandi`
 ### - Vedere collegamenti router:
   - 1 Apro il router e vado nella pagina CLI
-  - 2 Digito `enable` (compare  il #)
+  - 2 Digito `enable` (compare  il "#")
   - 3 Digito `show ip route`
