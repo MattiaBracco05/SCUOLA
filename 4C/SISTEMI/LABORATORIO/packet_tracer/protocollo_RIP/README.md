@@ -9,6 +9,8 @@
 ## `Componenti`
 - Switch
 - Router
+## `Particolarità`
+- Impostazione del RIP nei router
 ## `Comandi`
 ### - Vedere collegamenti router:
   - 1 Apro il router e vado nella pagina CLI
