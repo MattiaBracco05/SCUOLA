@@ -25,4 +25,4 @@
   
     (abilita il passaggio dei pacchetti)
   - 8 Digito `network {IP rete 2` per impostare la seconda rete
-  - (abilito il passaggio dei pacchetti)
+  - (abilita il passaggio dei pacchetti)
