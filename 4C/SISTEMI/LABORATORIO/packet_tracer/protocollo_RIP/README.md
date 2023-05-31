@@ -15,14 +15,14 @@
   - 2 Digito `enable` (compare  il "#")
   - 3 Digito `conf t` per entrare in modalità configurazione
   - 4 Digiro `router rip` per entare nella configurazione del router
-  - 5 Digito `version 2` per impostare la versione del rip che voglio utilizzare
+  - 5 Digito `version {numeroVersione}` per impostare la versione del rip che voglio utilizzare
     
     (nel mio caso la versione 2 perchè mi permette anche di gestire le sottoreti)
   - 6 Digito `no auto-summary`
   
     (lo imposto per poter fare il subnetting, altimenti raggrupperebbe tutto sotto un unico indirizzo IP)
-  - 7 Digito `network 100.0.0.0` per impostare la prima rete
+  - 7 Digito `network {IP rete 1}` per impostare la prima rete
   
     (abilita il passaggio dei pacchetti)
-  - 8 Digito `network 101.0.0.0` per impostare la seconda rete
+  - 8 Digito `network {IP rete 2` per impostare la seconda rete
   - (abilito il passaggio dei pacchetti)
