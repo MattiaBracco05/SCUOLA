@@ -11,6 +11,8 @@
 - Router
 ## `Particolarità`
 - Impostazione del RIP nei router
+- Utilizzo delle porte seriali
+- Nella versione 2 ho inserito un altro router (Rete 5 --> 104.0.0.0) collegato al router 1 tramite una porta seriale aggiunta dall'interfaccia del router
 ## `Comandi`
 ### - Vedere collegamenti router:
   - 1 Apro il router e vado nella pagina CLI
