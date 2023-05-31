@@ -15,7 +15,7 @@
   - 2 Digito `enable` (compare  il "#")
   - 3 Digito `conf t` per entrare in modalità configurazione
   - 4 Digiro `router rip` per entare nella configurazione del router
-  - 5 Digito `version {numeroVersione}` per impostare la versione del rip che voglio utilizzare
+  - 5 Digito `version {numero versione}` per impostare la versione del rip che voglio utilizzare
     
     (nel mio caso la versione 2 perchè mi permette anche di gestire le sottoreti)
   - 6 Digito `no auto-summary`
