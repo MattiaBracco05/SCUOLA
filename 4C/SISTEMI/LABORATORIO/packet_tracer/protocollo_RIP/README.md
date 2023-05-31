@@ -1,7 +1,7 @@
 # PROTOCOLLO RIP
 ## - Simulazione del protocollo RIP
 ## `Struttura`
-- 4 Reti collegate fra loro da 3 Router
+4 Reti collegate fra loro da 3 Router
 - Rete 1 --> 100.0.0.0
 - Rete 2 --> 101.0.0.0
 - Rete 3 --> 102.0.0.0
