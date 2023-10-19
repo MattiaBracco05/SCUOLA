@@ -33,3 +33,10 @@
   -  1 Aprire la voce `DNS` nella scheda `Services` del mio server DNS
   -  2 Selezionare come `type` la voce `CNAME` e inserire il nome da assegnare es. `pippoPC`
   -  3 Inserire nel campo `Host Name` il nome precedentemente assegnato con il type A record (pippo.local.pc)
+### - Utilizzo del comando nslookup:
+  -  1 Aprire il`Prompt dei comandi` e digitare `nslookup {indirizzo del sito}` (9 es. www.denina.it)
+  -  2 Mi viene resistituito l'indirizzo associato al DNS da me cercato (nel campo `Address`)
+### - Utilizzo del comando nslookup in maniera interattiva:
+  -  1 Aprire il `Prompt dei comandi` e digitare `nslookup`
+  -  2 Digitare un DNS da ricercare es. `www.google.it`
+  -  3 Digitare `exit` per uscire
