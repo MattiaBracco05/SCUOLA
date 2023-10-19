@@ -9,15 +9,15 @@
 - Utilizzo del servizio DNS su un server
 - Possibilità di fare un ping con il nome assegnato alla macchina
 ## `Comandi`
-### - Assegnazione del DNS server ai computer:
+### - Assegnazione del server DNS ai computer:
   -  1 Cliccare sul computer
   -  2 Cliccare sulla scheda `IP Configuration`
   -  3 Nel campo `DNS Server` inserire l'indirizzo IP del mio server DNS
-### - Assegnazione del DNS server ai server DNS:
+### - Assegnazione del DNS al server DNS:
   -  1 Cliccare sul server
   -  2 Cliccare sulla scheda `IP Configuration`
   -  3 Nel campo `DNS Server` inserire l'indirizzo IP del mio server DNS
-### - Creazione di un nome sul DNS server:
+### - Creazione di un nome sul server DNS:
   -  1 Cliccare sul server
   -  2 Cliccare su `Services`
   -  3 Dal menù a sinistra cliccare su `DNS`
@@ -29,3 +29,7 @@
   -  1 Cliccare sul computer
   -  2 Cliccare su `Command Prompt`
   -  3 Digitare `ping {nome assegnato al PC tramite DNS}`
+### - Assegnazione di un alias tramite server DNS:
+  -  1 Aprire la voce `DNS` nella scheda `Services` del mio server DNS
+  -  2 Selezionare come `type` la voce `CNAME` e inserire il nome da assegnare es. `pippoPC`
+  -  3 Inserire nel campo `Host Name` il nome precedentemente assegnato con il type A record (pippo.local.pc)
