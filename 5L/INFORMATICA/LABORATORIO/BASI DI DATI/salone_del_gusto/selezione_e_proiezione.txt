@@ -30,11 +30,11 @@ DI Visitatore.Nome
 5) ---------- Elenco aziende delle quali almeno un visitatore ha effettuato più di un assaggio dello stesso prodotto ----------
 PROIEZIONE SU (
 	SELEZIONE SU (
-		JOIN SU (Visitatore, Assaggi, Prodotti, Produzione, Azienda
-		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Produzione.CodiceProdotto = Prodotti.CodiceProdotto)
+		JOIN SU (Assaggi, Prodotti, Azienda
+		DOVE Azienda.CodiceAzienda = Prodotti.CodiceAzienda && prodotti.CodiceProdotto = Assaggia.Codiceprodotto)
 	)
 	DOVE Assaggi.NumeroAssaggi > 1)
-DI Azienda
+DI Azienda.Nome
 
 
 6) ---------- Elenco dei nomi e delle età dei visitatori che hanno Assaggito un prodotto caseario presente in uno stand con superficie superiore ai 20 m quadrati ----------
@@ -43,25 +43,25 @@ PROIEZIONE SU (
 		JOIN SU (Visitatore, Assaggi, Prodotti, Esposto, Stand
 		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Esposto.CodiceProdotto = Prodotti.CodiceProdotto)
 	)
-	DOVE Prodotti.Tipologia = “formaggio”, Stand.Superficie > 20)
+	DOVE Prodotti.Tipologia = “Formaggio”, Stand.Superficie > 20)
 DI Visitatori.Nome, Visitatori.Eta
 
 
 7) ---------- Elenco delle zone nelle quali ci sono degli stand di aziende che fanno prodotti che non sono mai stati Assaggiti ----------
 PROIEZIONE SU (
-	SELEZIONE SU (
-		JOIN SU (Visitatore, Assaggi, Prodotti, Esposto, Stand, Azienda
-		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Esposto.CodiceProdotto = Prodotti.CodiceProdotto)
-	)
-	DOVE Assaggi.NumeroAssaggi = 0)
-DI Stand.Zona 
+	JOIN SU (Prodotti, Stand
+	DOVE Stand.NumeroStand = Prodotti.NumeroStand)
+	&&
+	L_JOIN SU (Prodotti, Assaggia //L_JOIN = Left Join | R_JOIN = Right Join
+	DOVE Prodotti.CodiceProdotto = Assaggia.Codiceprodotto && Assaggia.NumeroAssaggi = NULL)		
+DI Stand.Zona
 
 
 8) ---------- Nome dei visitatori maggiorenni e le caratteristiche dei prodotti che hanno Assaggito ----------
 PROIEZIONE SU (
 	SELEZIONE SU (
-		JOIN SU (Visitatore, Assaggi, Prodotti
-		DOVE Assaggi.CodiceVisitatore = Visitatore.CodVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto)
+		JOIN SU (Visitatore, Assaggia, Prodotti
+		DOVE Visitatore.CodiceVisitatore = Assaggia.CodiceVisitatore && Prodotti.CodiceProdotto = Assaggia.CodiceProdotto)
 	)
-	DOVE Assaggi.NumAssaggi >= 1, Visitatori.Eta >= 18)
+	DOVE Visitatori.Eta >= 18)
 DI Visitatori.Nome, Prodotti.Caratteristiche
