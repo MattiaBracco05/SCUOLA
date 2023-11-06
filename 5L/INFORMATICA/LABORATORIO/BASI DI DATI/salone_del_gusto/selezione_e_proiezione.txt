@@ -1,0 +1,67 @@
+1) ---------- Elenco di tutti i nomi dei visitatori maggiorenni ----------
+PROIEZIONE SU (
+	SELEZIONE SU Visitatore
+	DOVE Eta >= 18)
+DI Nome
+
+
+2) ---------- Elenco dei nomi e delle caratteristiche dei prodotti con tipologia “formaggi” ----------
+PROIEZIONE SU (	
+	SELEZIONE SU Prodotti
+	DOVE Tipologia = "formaggi")
+DI Nome, Caratteristiche
+
+
+3) ---------- Elenco degli stand con superficie inferiore a 15mq ----------
+SELEZIONE SU Stand
+DOVE Superficie <= 15
+
+
+4) ---------- Elenco dei nomi dei minorenni che hanno Assaggito del vino ----------
+PROIEZIONE SU (
+	SELEZIONE SU (
+		JOIN SU (Visitatore, Assaggi, Prodotti
+		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto)
+	)
+	DOVE Eta < 18)
+DI Visitatore.Nome
+
+
+5) ---------- Elenco aziende delle quali almeno un visitatore ha effettuato più di un assaggio dello stesso prodotto ----------
+PROIEZIONE SU (
+	SELEZIONE SU (
+		JOIN SU (Visitatore, Assaggi, Prodotti, Produzione, Azienda
+		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Produzione.CodiceProdotto = Prodotti.CodiceProdotto)
+	)
+	DOVE Assaggi.NumeroAssaggi > 1)
+DI Azienda
+
+
+6) ---------- Elenco dei nomi e delle età dei visitatori che hanno Assaggito un prodotto caseario presente in uno stand con superficie superiore ai 20 m quadrati ----------
+PROIEZIONE SU (
+	SELEZIONE SU (
+		JOIN SU (Visitatore, Assaggi, Prodotti, Esposto, Stand
+		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Esposto.CodiceProdotto = Prodotti.CodiceProdotto)
+	)
+	DOVE Prodotti.Tipologia = “formaggio”, Stand.Superficie > 20)
+DI Visitatori.Nome, Visitatori.Eta
+
+
+7) ---------- Elenco delle zone nelle quali ci sono degli stand di aziende che fanno prodotti che non sono mai stati Assaggiti ----------
+PROIEZIONE SU (
+	SELEZIONE SU (
+		JOIN SU (Visitatore, Assaggi, Prodotti, Esposto, Stand, Azienda
+		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto && Esposto.CodiceProdotto = Prodotti.CodiceProdotto)
+	)
+	DOVE Assaggi.NumeroAssaggi = 0)
+DI Stand.Zona 
+
+
+8) ---------- Nome dei visitatori maggiorenni e le caratteristiche dei prodotti che hanno Assaggito ----------
+PROIEZIONE SU (
+	SELEZIONE SU (
+		JOIN SU (Visitatore, Assaggi, Prodotti
+		DOVE Assaggi.CodiceVisitatore = Visitatore.CodVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto)
+	)
+	DOVE Assaggi.NumAssaggi >= 1, Visitatori.Eta >= 18)
+DI Visitatori.Nome, Prodotti.Caratteristiche
