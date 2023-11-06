@@ -23,7 +23,7 @@ PROIEZIONE SU (
 		JOIN SU (Visitatore, Assaggi, Prodotti
 		DOVE Assaggi.CodiceVisitatore = Visitatore.CodiceVisitatore && Assaggi.CodiceProdotto = Prodotti.CodiceProdotto)
 	)
-	DOVE Eta < 18)
+	DOVE Visitatore.Eta < 18 && Prodotti.Tipologia = "Vino")
 DI Visitatore.Nome
 
 
