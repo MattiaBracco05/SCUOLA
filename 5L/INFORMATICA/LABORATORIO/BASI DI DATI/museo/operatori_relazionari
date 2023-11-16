@@ -1,0 +1,54 @@
+**************************************************************************************************************************************
+1- Estrarre il Cognome e Nome degli artisti italiani che espongono al Louvre
+**************************************************************************************************************************************
+PROIEZIONE su (	
+	SELEZIONE su (
+		CONGIUNZIONE di Opere, Artisti
+		DOVE Artisti.NomeArtista = Opere.NomeArista 
+	)
+	DOVE Opere.NomeMuseo = "Louvre" AND Artisti.Nazionalità = "Italiana"
+)
+di Artisi.NomeArtista, Artisti.CognomeArtista
+
+
+**************************************************************************************************************************************
+2- Estrarre il Museo in cui sono esposte ed il nome delle opere di Salvador Dali
+**************************************************************************************************************************************
+PROIEZIONE su (	
+	SELEZIONE su Opere
+	DOVE Opere.NomeArtista = "Salvador Dali"
+)
+di NomeMuseo, Titolo
+
+
+**************************************************************************************************************************************
+3- Elencare tutte le sculture superiori a 3 Kg di Picasso
+**************************************************************************************************************************************
+PROIEZIONE su (
+	SELEZIONE su (
+		CONGIUNZIONE di Opere, Sculture
+		DOVE Scultura.IDscultura = Opere.IDscultura
+	)
+	DOVE Sculture.Peso > 3 AND Opere.NomeArtista = "Picasso"
+)
+di Opere, Titolo
+
+
+**************************************************************************************************************************************
+4- Estrarre tutti i dipinti prodotti prima del 1945, con il cognome ed il nome del relativo artista, se italiano
+**************************************************************************************************************************************
+PROIEZIONE su (	
+	SELEZIONE su (
+		CONGIUNZIONE di Dipinto,Opere, Artisti 
+		DOVE Dipinto.IDDipinto = Opere.IDDipinto AND Opere.NomeArtista = Artisti.NomeArtista
+	)
+	DOVE Opere.AnnoCreazione < 1945 AND Artisti.Nazionalità = "Italiana"
+)
+Artista.Nome, Artisti.Cognome, Opere.Titolo
+
+
+**************************************************************************************************************************************
+5- Elencare il cognome ed il nome di tutti gli artisti ancora in vita
+**************************************************************************************************************************************
+
+
