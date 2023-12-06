@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5L Bracco verifica</title>
+</head>
+<body>
+    <h1>Form per l'inserimento dei dati</h1>
+
+    <!-- Inizio del form -->
+    <form action="http://localhost:3000/" method="GET">
+
+        <!-- Input della temperatura minima -->
+        <input type="text" name="tempMin" placeholder="Ins temp minima (°C)">
+        <br><br>
+
+        <!-- Input della temperatura massima -->
+        <input type="text" name="tempMax" placeholder="Ins temp massima (°C)">
+        <br><br>
+
+        <!-- Select della località -->
+        <select name="localitaSelezionata" id="localita">
+            <option value="verzuolo">Verzuolo</option>
+            <option value="milano">Milano</option>
+            <option value="torino">Torino</option>
+            <option value="firenze">Firenze</option>
+            <option value="bologna">Bologna</option>
+            <option value="roma">Roma</option>
+            <option value="napoli">Napoli</option>
+            <option value="bari">Bari</option>
+            <option value="messina">Messina</option>
+        </select>
+        <br><br>
+
+        <!-- Button per inviare i dati (type="submit" perchè lo invio al server) -->
+        <input type="submit" id="buttonInvia" value="INVIA">
+    </form>
+    <!-- Fine del form -->
+</body>
+</html>
