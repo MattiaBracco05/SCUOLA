@@ -57,8 +57,8 @@ SCUOLA
   |     |        | --> Excel
   |     |
   |     | --> MATEMATICA
-  |     |        | --> Schede di lavoro
-  |     |        | --> Schemi
+  |              | --> Schede di lavoro
+  |              | --> Schemi
   |
   | --> 2A
   |     | --> CHIMICA
@@ -72,14 +72,40 @@ SCUOLA
   |     | --> MATEMATICA
   |     |
   |     | --> STA (INFO / ELETTRO)
-  |     |        | --> Appunti
+  |              | --> Appunti
   |
   | --> 3C
   |     | --> INFORMATICA
+  |     |        | --> Laboratorio
+  |     |        | --> Teoria
+  |     | 
   |     | --> MATEMATICA
+  |     |        | --> Disequazioni
+  |     |        | --> Esponenziali
+  |     |        | --> Goniometria
+  |     |        | --> Logaritmi
+  |     |        | --> Trigonometria
+  |     |
   |     | --> SISTEMI
+  |     |        | --> Laboratorio
+  |     |        |        | --> Assembly
+  |     |        |        | --> Bash
+  |     |        |
+  |     |        | --> Teoria
+  |     | 
   |     | --> TELECOMUNICAZIONI
+  |     |        | --> Esercizi
+  |     |        | --> Relazioni
+  |     |        | --> Schemi
+  |     | 
   |     | --> TPSIT
+  |              | --> Assets
+  |              | --> Bootstrap
+  |              | --> Javascript
+  |              | --> Layout
+  |              | --> Phaser 3
+  |              | --> Progetti
+  |       
   |
   | --> 4C
   |     | --> INFORMATICA
