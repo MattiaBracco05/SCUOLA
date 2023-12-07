@@ -50,40 +50,52 @@
 SCUOLA
   |
   | --> 1A
+  |     |
   |     | --> CHIMICA
+  |     |        |
   |     |        | --> Appunti
   |     |        | --> Relazioni
   |     |
   |     | --> FISICA
+  |     |        |
   |     |        | --> Relazioni
   |     |
   |     | --> INFORMATICA
+  |     |        |  
   |     |        | --> Excel
   |     |
   |     | --> MATEMATICA
+  |              |
   |              | --> Schede di lavoro
   |              | --> Schemi
   |
   | --> 2A
+  |     |
   |     | --> CHIMICA
+  |     |        |
   |     |        | --> Appunti
   |     |        | --> Relazioni
   |     |
   |     | --> FISICA
+  |     |        |
   |     |        | --> Appunti
   |     |        | --> Relazioni
   |     |
   |     | --> MATEMATICA
   |     |
   |     | --> STA (INFO / ELETTRO)
+  |              | 
   |              | --> Appunti
   |
   | --> 3C
+  |     |
   |     | --> INFORMATICA
+  |     |        |
   |     |        | --> Laboratorio
   |     |        | --> Teoria
   |     | 
   |     | --> MATEMATICA
+  |     |        |
   |     |        | --> Disequazioni
   |     |        | --> Esponenziali
   |     |        | --> Goniometria
@@ -91,18 +103,22 @@ SCUOLA
   |     |        | --> Trigonometria
   |     |
   |     | --> SISTEMI
+  |     |        |
   |     |        | --> Laboratorio
+  |     |        |        |
   |     |        |        | --> Assembly
   |     |        |        | --> Bash
   |     |        |
   |     |        | --> Teoria
   |     | 
   |     | --> TELECOMUNICAZIONI
+  |     |        |
   |     |        | --> Esercizi
   |     |        | --> Relazioni
   |     |        | --> Schemi
   |     | 
   |     | --> TPSIT
+  |              |
   |              | --> Assets
   |              | --> Bootstrap
   |              | --> Javascript
@@ -111,8 +127,11 @@ SCUOLA
   |              | --> Progetti
   |       
   | --> 4C
+  |     |
   |     | --> INFORMATICA
+  |     |        |
   |     |        | --> Laboratorio
+  |     |        |        |
   |     |        |        | --> Es tradotti
   |     |        |        | --> OOP
   |     |        |        | --> PYgame
@@ -121,11 +140,15 @@ SCUOLA
   |     |        | --> Teoria
   |     | 
   |     | --> MATEMATICA
+  |     |        |
+  |     |        | --> Schemi
+  |     |
   |     | --> SISTEMI
   |     | --> TELECOMUNICAZIONI
   |     | --> TPSIT
   |
   | --> 5L
+  |     |
   |     | --> CODING WEEK
   |     | --> GPOI
   |     | --> INFORMATICA
