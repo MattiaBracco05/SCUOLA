@@ -155,6 +155,11 @@ SCUOLA
   |     |                 | --> Schemi
   |     |
   |     | --> TELECOMUNICAZIONI
+  |     |        |
+  |     |        | --> Logo Siemens
+  |     |        | --> Relazioni
+  |     |        | --> Schemi
+  |     |
   |     | --> TPSIT
   |
   | --> 5L
