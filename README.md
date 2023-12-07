@@ -106,9 +106,16 @@ SCUOLA
   |              | --> Phaser 3
   |              | --> Progetti
   |       
-  |
   | --> 4C
   |     | --> INFORMATICA
+  |     |        | --> Laboratorio
+  |     |        |        | --> Es tradotti
+  |     |        |        | --> OOP
+  |     |        |        | --> PYgame
+  |     |        |        | --> TKinter
+  |     |        |
+  |     |        | --> Teoria
+  |     | 
   |     | --> MATEMATICA
   |     | --> SISTEMI
   |     | --> TELECOMUNICAZIONI
