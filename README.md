@@ -41,6 +41,45 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/>
 </p>
 
+
+```python
+SCUOLA
+  |
+  | --> 1A
+  |     | --> CHIMICA
+  |     | --> FISICA
+  |     | --> INFORMATICA
+  |     | --> MATEMATICA
+  |
+  | --> 2A
+  |     | --> CHIMICA
+  |     | --> FISICA
+  |     | --> MATEMATICA
+  |     | --> STA
+  |
+  | --> 3C
+  |     | --> INFORMATICA
+  |     | --> MATEMATICA
+  |     | --> SISTEMI
+  |     | --> TELECOMUNICAZIONI
+  |     | --> TPSIT
+  |
+  | --> 4C
+  |     | --> INFORMATICA
+  |     | --> MATEMATICA
+  |     | --> SISTEMI
+  |     | --> TELECOMUNICAZIONI
+  |     | --> TPSIT
+  |
+  | --> 5L
+  |     | --> CODING WEEK
+  |     | --> GPOI
+  |     | --> INFORMATICA
+  |     | --> MATEMATICA
+  |     | --> SISTEMI
+  |     | --> TPSIT
+
+```
 <h3 align="left">TELECOMUNICAZIONI</h3>
 <p align="left">
   <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
