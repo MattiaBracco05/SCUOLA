@@ -172,6 +172,11 @@ SCUOLA
   | --> 5L
   |     |
   |     | --> CODING WEEK
+  |     |        |
+  |     |        | --> Campo Minato
+  |     |        | --> Ducker
+  |     |        | --> Stacker
+  |     |
   |     | --> GPOI
   |     | --> INFORMATICA
   |     | --> MATEMATICA
