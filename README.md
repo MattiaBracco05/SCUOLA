@@ -119,11 +119,11 @@ SCUOLA
   |     | 
   |     | --> TPSIT
   |              |
-  |              | --> Assets
+  |              | --> Layout
   |              | --> Bootstrap
   |              | --> Javascript
-  |              | --> Layout
   |              | --> Phaser 3
+  |              | --> Assets
   |              | --> Progetti
   |       
   | --> 4C
@@ -134,7 +134,7 @@ SCUOLA
   |     |        |        |
   |     |        |        | --> Es tradotti
   |     |        |        | --> OOP
-  |     |        |        | --> PYgame
+  |     |        |        | --> PYGame
   |     |        |        | --> TKinter
   |     |        |
   |     |        | --> Teoria
@@ -156,11 +156,18 @@ SCUOLA
   |     |
   |     | --> TELECOMUNICAZIONI
   |     |        |
-  |     |        | --> Logo Siemens
   |     |        | --> Relazioni
   |     |        | --> Schemi
+  |     |        | --> Logo Siemens
   |     |
   |     | --> TPSIT
+  |              |
+  |              | --> JSON
+  |              | --> XML
+  |              | --> REACT
+  |              | --> Mongo DB
+  |              | --> Java
+  |              | --> Progetti
   |
   | --> 5L
   |     |
