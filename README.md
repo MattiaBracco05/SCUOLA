@@ -42,7 +42,7 @@
 </p>
 
 
-```python
+```
 SCUOLA
   |
   | --> 1A
