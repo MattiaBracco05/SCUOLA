@@ -47,15 +47,32 @@ SCUOLA
   |
   | --> 1A
   |     | --> CHIMICA
+  |     |        | --> Appunti
+  |     |        | --> Relazioni
+  |     |
   |     | --> FISICA
+  |     |        | --> Relazioni
+  |     |
   |     | --> INFORMATICA
+  |     |        | --> Excel
+  |     |
   |     | --> MATEMATICA
+  |     |        | --> Schede di lavoro
+  |     |        | --> Schemi
   |
   | --> 2A
   |     | --> CHIMICA
+  |     |        | --> Appunti
+  |     |        | --> Relazioni
+  |     |
   |     | --> FISICA
+  |     |        | --> Appunti
+  |     |        | --> Relazioni
+  |     |
   |     | --> MATEMATICA
-  |     | --> STA
+  |     |
+  |     | --> STA (INFO / ELETTRO)
+  |     |        | --> Appunti
   |
   | --> 3C
   |     | --> INFORMATICA
