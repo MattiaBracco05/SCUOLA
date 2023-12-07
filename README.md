@@ -144,6 +144,16 @@ SCUOLA
   |     |        | --> Schemi
   |     |
   |     | --> SISTEMI
+  |     |        |
+  |     |        | --> Laboratorio
+  |     |        |        |
+  |     |        |        | --> C
+  |     |        |        | --> Packet Tracer
+  |     |        |
+  |     |        | --> Teoria
+  |     |                 |
+  |     |                 | --> Schemi
+  |     |
   |     | --> TELECOMUNICAZIONI
   |     | --> TPSIT
   |
