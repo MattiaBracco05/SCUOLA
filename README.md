@@ -178,9 +178,35 @@ SCUOLA
   |     |        | --> Stacker
   |     |
   |     | --> GPOI
+  |     |        | --> Laboratorio
+  |     |        | --> Teoria
+  |     |
   |     | --> INFORMATICA
+  |     |        | --> Laboratorio
+  |     |        |        |
+  |     |        |        | --> Basi di dati
+  |     |        |        | --> PHP
+  |     |        |
+  |     |        | --> Teoria
+  |     |                 |
+  |     |                 | --> Database
+  |     |                 | --> PHP
+  |     |                 | --> Progettazione base di dati
+  |     | 
   |     | --> MATEMATICA
   |     | --> SISTEMI
+  |     |        | --> Laboratorio
+  |     |        |        |
+  |     |        |        | --> Crittografia
+  |     |        |        | --> Packet Tracer
+  |     |        |
+  |     |        | --> Teoria
+  |     |                 |
+  |     |                 | --> Schemiche
+  |     |                 | --> Tecniche di crittografia
   |     | --> TPSIT
+  |              |
+  |              | --> Node JS
+
 
 ```
