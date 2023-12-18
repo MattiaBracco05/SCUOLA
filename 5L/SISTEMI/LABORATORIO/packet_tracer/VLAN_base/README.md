@@ -18,6 +18,12 @@
 ### - Visualizzare le VLAN:
   -  1 Cliccare sullo switch
   -  2 Cliccare su `CLI`
-  -  4 Digitare `show vlan brief`
+  -  3 Digitare `show vlan brief`
+### - Configurare le VLAN:
+  -  1 Cliccare sullo switch
+  -  2 Cliccare su `CLI`
+  -  3 Digitare `conf t` per entrare in modalita di configurazione
+  -  4 Digitare `interface {nome porta}` (es. fastEthernet 0/1)
+  -  5 Digitare `switchport access {vlan da assegnare}` (es. vlan 10) 
 ### - Annullare un comando:
   -  1 Digitare `No {comando da annuallare}`
