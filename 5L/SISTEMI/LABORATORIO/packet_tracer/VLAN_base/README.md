@@ -24,6 +24,7 @@
   -  2 Cliccare su `CLI`
   -  3 Digitare `conf t` per entrare in modalita di configurazione
   -  4 Digitare `interface {nome porta}` (es. fastEthernet 0/1)
-  -  5 Digitare `switchport access {vlan da assegnare}` (es. vlan 10) 
+  -  5 Digitare `switchport access {vlan da assegnare}` (es. vlan 10)
+  -  `access` --> indica la modalità di accesso
 ### - Annullare un comando:
   -  1 Digitare `No {comando da annuallare}`
