@@ -178,6 +178,7 @@ SCUOLA
   |     |        | --> Stacker
   |     |
   |     | --> GPOI
+  |     |        |
   |     |        | --> Laboratorio
   |     |        | --> Teoria
   |     |
@@ -195,6 +196,7 @@ SCUOLA
   |     | 
   |     | --> MATEMATICA
   |     | --> SISTEMI
+  |     |        |
   |     |        | --> Laboratorio
   |     |        |        |
   |     |        |        | --> Crittografia
