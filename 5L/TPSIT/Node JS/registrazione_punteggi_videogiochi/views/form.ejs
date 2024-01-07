@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>5L Bracco Registrazione</title>
+</head>
+
+<body class="container">
+
+    <h1 class="mt-5">Registrazione dei punteggi</h1>
+
+    <!-- Inizio del form -->
+    <form action="/submit" method="post" class="mt-4">
+        <!-- Input del nome del videogioco -->
+        <div class="form-group">
+            <!-- Label -->
+            <label for="nomeGioco">Nome videogioco:</label>
+            <!-- Input text -->
+            <input type="text" name="nomeGioco" placeholder="Inserisci il nome del videogioco" class="form-control" required>
+        </div>
+    
+        <!-- Input del punteggio -->
+        <div class="form-group">
+            <!-- Label -->
+            <label for="punteggioGioco">Punteggio:</label>
+            <!-- Input number -->
+            <input type="number" name="punteggioGioco" placeholder="Inserisci il punteggio" class="form-control" required>
+        </div>
+        
+        <!-- Button per l'invio dei dati -->
+        <button type="submit" class="btn btn-primary">REGISTRA</button>
+    </form>
+    <!-- Fine del form -->
+
+</body>
+</html>
