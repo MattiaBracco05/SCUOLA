@@ -16,7 +16,7 @@
 ## `Comandi`
 ### - Interface VLAN su SW Layer 3:
   -  1 Cliccare sullo switch
-  -  2 Cliccare su `CLI`
+  -  2 Cliccare sulla scheda `CLI`
   -  3 Digitare `Enable`
   -  4 Digitare `Conf t`
   -  5 Digitare `interface vlan 10`
@@ -29,7 +29,7 @@
 
 ### - CONFIGURAZIONE DELLA GIGABIT ETHERNET 0/2
   -  1 Cliccare sullo switch
-  -  2 Cliccare su `CLI`
+  -  2 Cliccare sulla scheda `CLI`
   -  3 Digitare `Enable`
   -  4 Digitare `Conf t`
   -  5 Dgitare `interface {Nome Dell'interfaccia}` tipo `interface gigabitEthernet 0/2`
