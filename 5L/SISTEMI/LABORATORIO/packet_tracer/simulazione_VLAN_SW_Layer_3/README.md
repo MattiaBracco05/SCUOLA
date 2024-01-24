@@ -20,17 +20,21 @@
   -  3 Digitare `Enable`
   -  4 Digitare `Conf t`
   -  5 Digitare `interface vlan 10`
-  -  6 Digitare `ip address {Indirizzo IP} {Subnet Mask}` `ip address 192.168.10.254 255.255.255.0`
+  -  6 Digitare `ip address {Indirizzo IP} {Subnet Mask}` tipo `ip address 192.168.10.254 255.255.255.0`
   -  7 Digitare `Exit`
   -  8 Da rifare per tutte le VLAN (10, 20, 30, 40, 50 e 60)
 
-PER ABILITARE IL ROUTING TRA LE VLAN:
-ip routing
+### - PER ABILITARE IL ROUTING TRA LE VLAN:
+  - Digitare `ip routing`
 
-CONFIGURAZIONE DELLA GIGABIT ETHERNET 0/2
-interface gigabitEthernet 0/2
-no switchport
+### - CONFIGURAZIONE DELLA GIGABIT ETHERNET 0/2
+  -  1 Cliccare sullo switch
+  -  2 Cliccare su `CLI`
+  -  3 Digitare `Enable`
+  -  4 Digitare `Conf t`
+  -  5 Dgitare `interface {Nome Dell'interfaccia}` tipo `interface gigabitEthernet 0/2`
+  -  6 Digitare `no switchport`
 
-adesso posso configurarla come una porta del router...
-192.168.100.1
-255.255.255.252
+### - Adesso posso configurarla come una porta del router...
+- Assegno alla porta  l'IP: `192.168.100.1`
+- Assegno alla porta la Subnet Mask: `255.255.255.252`
