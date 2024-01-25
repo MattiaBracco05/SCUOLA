@@ -46,8 +46,6 @@
     <img src="https://hurbad.com/wp-content/uploads/2021/12/Cisco-Packet-Tracer.png" alt="packet tracer" width="40" height="40"/>
 </p>
 
-
-
 <h3 align="center">TPSIT</h3>
 <!-- OS -->
 <h4>OS:</h4>
@@ -82,9 +80,17 @@
   <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
 </p>
 
-<h3 align="left">TELECOMUNICAZIONI</h3>
+<h3 align="center">TELECOMUNICAZIONI</h3>
+
+<!-- OS -->
+<h4>OS:</h4>
 <p align="left">
-  <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
+  <img src="https://logos-world.net/wp-content/uploads/2020/12/Windows-New-Logo.png" alt="windowsl0" width="70" height="40"/>
+</p>
+
+<!-- Software e programmi -->
+<h4>Software e programmi:</h4>
+<p align="left">
   <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/siemens_logo_icon_170741.png" alt="logo" width="40" height="40"/>
 </p>
 
