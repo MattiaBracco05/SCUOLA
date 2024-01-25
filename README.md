@@ -3,14 +3,24 @@
 <img align="right" alt="Coding" width="100%" src="https://img.freepik.com/premium-vector/finger-print-network-cyber-security-background_42077-5173.jpg">
 
 <h3 align="left">INFORMATICA</h3>
+<!-- OS -->
+<h4>OS:</h4>
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
-  <br />
+</p>
+
+<!-- Linguaggi -->
+<h4>Linguaggi:</h4>
+<p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
-  <br />
+</p>
+
+<!-- Software -->
+<h4>Software e programmi:</h4>
+<p align="left">
   <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/>
   <img src="https://seeklogo.com/images/X/xampp-logo-1C1A9E3689-seeklogo.com.png" alt="xampp" width="40" height="40"/>
 </p>
