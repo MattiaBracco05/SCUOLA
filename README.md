@@ -52,6 +52,12 @@
   <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/siemens_logo_icon_170741.png" alt="logo" width="40" height="40"/>
 </p>
 
+
+<h3 align="left">GPOI</h3>
+<p align="left">
+  <img src="https://logowik.com/content/uploads/images/gitlab8368.jpg" alt="gitlab" width="40" height="40"/>
+</p>
+
 ```
 SCUOLA
   |
