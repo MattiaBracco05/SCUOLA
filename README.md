@@ -95,7 +95,15 @@
 </p>
 
 
-<h3 align="left">GPOI</h3>
+<h3 align="center">GPOI</h3>
+<!-- OS -->
+<h4>OS:</h4>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+</p>
+
+<!-- Software e programmi -->
+<h4>Software e programmi:</h4>
 <p align="left">
   <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="gitlab" width="40" height="40"/>
 </p>
