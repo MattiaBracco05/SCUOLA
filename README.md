@@ -25,7 +25,6 @@
   <img src="https://seeklogo.com/images/X/xampp-logo-1C1A9E3689-seeklogo.com.png" alt="xampp" width="40" height="40"/>
 </p>
 
-
 <h3 align="center">SISTEMI</h3>
 <!-- OS -->
 <h4>OS:</h4>
