@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Organizza riunione</title>
+    </head>
+    <body>
+        <center>
+            <form action="registraDisponibilita.php" method="post">
+                <select name="giorni[]" multiple style='height: 85px'>
+                    <option value="lunedi">lunedi</option>
+                    <option value="martedi">martedi</option>
+                    <option value="mercoledi">mercoledi</option>
+                    <option value="giovedi">giovedi</option>
+                    <option value="venerdi">venerdi</option>
+                </select>
+                <select name="orari[]" multiple="multiple" style='height: 85px'>
+                    <option value="9-11">9-11</option>
+                    <option value="11-13">11-13</option>
+                    <option value="14-16">14-16</option>
+                    <option value="16-18">16-18</option>
+                </select>
+                <br><br>
+                Nome: <input type="text" name="nome" size="15"><br><br>
+                <input name="btnInvia" type="submit" value="INVIA" style='width: 170px'>
+            </form>
+            <button style="width: 170px"><a href="riepilogo.php">RIEPILOGO</a></button>
+        </center>
+    </body>
+</html>
+
