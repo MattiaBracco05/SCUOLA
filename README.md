@@ -245,6 +245,7 @@ SCUOLA
         |        | --> Teoria
         |
         | --> INFORMATICA
+        |        |
         |        | --> Laboratorio
         |        |        |
         |        |        | --> Basi di dati
