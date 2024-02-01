@@ -1,1 +1,1 @@
-# MATEMATICA ➕➖✖️➗🟰
+# MATEMATICA ➕➖✖️➗
