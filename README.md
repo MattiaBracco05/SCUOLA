@@ -90,6 +90,7 @@
 <!-- Software e programmi -->
 <h4>Software e programmi:</h4>
 <p align="left">
+  <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
   <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/siemens_logo_icon_170741.png" alt="logo" width="40" height="40"/>
 </p>
 
