@@ -1,5 +1,5 @@
 # SIMULAZIONE PROTOCOLLO STP
-## - Simulazione del protocollo STP
+## - Simulazione del protocollo STP (Spanning-Tree Protocol)
 ## `Componenti`
 - Switch
 - Server
