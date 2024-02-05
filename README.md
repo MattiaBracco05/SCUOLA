@@ -270,7 +270,7 @@ SCUOLA
         |        |
         |        | --> Teoria
         |                 |
-        |                 | --> Schemiche
+        |                 | --> Schemi
         |                 | --> Tecniche di crittografia
         | --> TPSIT
                  |
