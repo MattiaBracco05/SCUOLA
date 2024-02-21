@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5L Bracco Chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+
+    <!-- Inizio dello script JavaScript -->
+    <script>
+        let socket
+
+        //Funzione connetti()
+        const connetti = () => {
+            //Ricavo i valori inseriti e il button
+            let mioIP = document.querySelector("[placeholder='inserisci IP']")
+            let mioNick = document.querySelector("[placeholder='inserisci il Nick']")
+            let button = document.querySelector('.button');
+
+            //Controllo se i campi sono stati lasciati vuoti --> Messaggio di errore
+            if (mioIP.value=="" && mioNick.value=="") {
+                alert("campi vuoti");
+            }
+            //Altrimenti --> mi connetto
+            else {
+                //Mi connetto
+                socket = io.connect(mioIP.value)
+                //Invio il nickaname
+                socket.emit("invionick", mioNick.value)
+                //Disabilito il button
+                button.disabled = true;
+            }
+
+            //socket.on --> visualizzo l'elenco dei nickname
+            socket.on("elenconick", (nick)=>{
+
+                //Seleziono il container dove visualizzo i nickname
+                let visualizzanick = document.querySelector(".container1")
+                //Azzero i nickname (in modo che non si ripetano)
+                visualizzanick.innerHTML = "";
+
+                //Ciclo per la lunghezza dell'array con i nickname -->
+                for (let i = 0; i < nick.length; i++) {
+                    //Stampo il nickname (aggiungendolo a quelli precedenti)
+                    visualizzanick.innerHTML = visualizzanick.innerHTML + " " + nick[i] + "<br/>"
+                }
+                console.log("NickName: " + nick)
+            })
+        }
+
+        //Funzione invia()
+        const invia = () => {
+            //Ricavo il messaggio e il nickname inserito
+            let messaggio = document.querySelector("[placeholder='messaggio da inviare']")
+            let mioNick = document.querySelector("[placeholder='inserisci il Nick']")
+
+            //Creo un object literal (msg) con il nickname e il messaggio
+            let msg = {
+                "nickName" : mioNick.value,
+                "message" : messaggio.value
+            }
+
+            //Invio il messaggio
+            socket.emit("inviamsg", msg)
+            console.log(messaggio.value)
+
+            //socket.on --> visualizzo l'elenco dei messaggi
+            socket.on("elencomsg", (msg)=>{
+                //Seleziono il container dove visualizzo i messaggi
+                let visualizzamsg=document.querySelector(".container2")
+                //Azzero i messaggi (in modo che non si ripetano)
+                visualizzamsg.innerHTML = "";
+
+                //Ciclo per la lunghezza di msg -->
+                for (let i = 0; i < msg.length; i++) {
+                    //Stampo il nickname e il messaggio (aggiungendolo a quelli precedenti)
+                    visualizzamsg.innerHTML = visualizzamsg.innerHTML + " " + msg[i].nickName + ": " + msg[i].message + "<br/>"
+                    //console.log("messaggio + nick " + msg[i].nickName + ": " + msg[i].message)
+                }
+                console.log("Elenco messaggi + nick: " + msg.nickName + " " + msg.message);
+
+            })
+        }
+
+    </script>
+    <!-- Fine dello script JavaScript -->
+
+    <!-- Inizio dello style CSS -->
+    <style>
+        .container1{
+            border: 1px solid red;
+            background-color: aqua;
+        }
+        .container2{
+            border: 1px solid red;
+            background-color: aqua;
+            width: 800px;
+            height: 550px;
+        }
+        .btninvia{
+            width: 100%;
+            height: 100%;
+        }
+        .txtinvio{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!-- Fine dello style CSS -->
+
+</head>
+<body>
+    <div class="container-fluid m-5">
+
+        <!-- Inizio della riga -->
+        <div class="row">
+            <!-- Input text per l'IP e la porta -->
+            <input type="text" name="ip" id="" placeholder='inserisci IP' value="http://172.10.195.117:3000">
+            <!-- Input text per il nickname -->
+            <input type="text" name="username" id="" placeholder='inserisci il Nick' value="Bracco">
+            <!-- Button per l'invio dei dati -->
+            <input type="button" value="Invia" class="button" onclick="connetti()">
+        </div>
+        <!-- Fine della riga -->
+
+        <!-- Inizio della riga -->
+        <div class="row mt-3">
+            
+            <!-- Colonna dove stampo i nickname -->
+            <div class="col-4">
+                <!-- Container dove faccio l'inner.HTML -->
+                <div class="container1"></div>
+            </div>
+            
+            <!-- Colonna dove stampo i messaggi -->
+            <div clas="col-8">
+
+                <!-- Container dove faccio l'inner.HTMl -->
+                <div class="container2"></div>
+
+                <div class="row">
+                    <!-- Input text del messaggio -->
+                    <div class="col-8">
+                        <input type="text" name="msg" class="txtinvio" id="" placeholder="messaggio da inviare">
+                    </div>
+                    <!-- Button per inviare i messaggi -->
+                    <div class="col-4">
+                        <input type="button" value="invia" class="btninvia" name="inviaMSG" onclick="invia()">
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+        <!-- Fine della riga -->
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</body>
+</html>

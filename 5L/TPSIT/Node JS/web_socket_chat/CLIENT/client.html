@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importo Socket.io (tramite CDN) -->
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+    
+    <title>5L Bracco Client</title>
+</head>
+
+<!-- Inizio script di JavaScript -->
+<script>
+
+    //Questa funzione viene richiamata quando clicco sul button
+    const connetti=()=> {
+        let socketConServer = io.connect("http://172.10.196.73:3000")
+        socketConServer.emit("invia", "Ciao :) ;) :)")
+        socketConServer.on("pippo", (dati) => {
+            //Ricavo il contenuto
+            let miaSelezione = document.querySelector("body")
+            //Creo un nuovo <div>
+            let nuovoTAG = document.createElement("div")
+            
+            //Inserisco nel <div> i dati
+            nuovoTAG.innerHTML = dati
+
+            //Aggiungo il <div> alla pagina
+            miaSelezione.appendChild(nuovoTAG)
+        })
+    }
+</script>
+<!-- Fine script di JavaScript -->
+
+<body>
+    <input type="button" value="CONNESSIONE" onclick="connetti()">
+</body>
+</html>

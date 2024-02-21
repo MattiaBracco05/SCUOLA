@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+    <title>5L Bracco Chat Rivoira</title>
+</head>
+
+<!-- Inizio dello stile CSS -->
+<style>
+
+    /* Stile per il container dei nickname */
+    .container {
+        border: 2px solid #3498db;
+        background-color: #f2f2f2;
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Stili per il titolo e gli input */
+    h1 {
+        text-align: center;
+        color: #3498db;
+    }
+
+    input[type="text"], input[type="button"] {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="button"] {
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    body {
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/785/651/708/garfield-wallpaper-preview.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
+
+    }    
+
+</style>
+<!-- Fine dello stile CSS -->
+
+<!-- Inizio dello script JavaScript -->
+<script>
+
+    let socket
+
+    //Funzione connetti
+    const connetti =()=> {
+        //Ricavo l'IP inserito
+        let mioIP = document.querySelector("[placeholder='indirizzo IP']")
+        //Ricavo il nickname inserito
+        let mioNick = document.querySelector("[placeholder='Inserisci il tuo nome']")
+        
+        //Controllo che i campi non siano stati lasciati vuoti
+        if (mioIP.value == "" && mioNick.value == "") {
+            alert("Errore!")
+        }
+        //Altrimenti (non sono vuoti) --> mi connetto
+        else {
+            socket = io.connect(mioIP.value)
+            //Invio al server il mio nickname
+            socket.emit("invionick", mioNick.value)
+            
+            //IP e porta del prof: 172.10.196.3:3000
+            socket.on("elenconick", (dato) => {
+                let visualizzanick = document.querySelector(".container")
+                visualizzanick.innerHTML = ""
+                for (let i=0; i<dato.length; i++) {
+                    //alert(dato[i])
+                    visualizzanick.innerHTML = visualizzanick.innerHTML + " " + dato[i] + "<br>"
+                }
+            })
+        }
+    }
+
+</script>
+<!-- Fine dello script JavaScript -->
+
+<body>
+    <!-- Descrizione -->
+    <h1>Chat Rivoira</h1>
+    
+    <!-- Input IP e Nickname -->
+    <input type="text" name="ip" placeholder="indirizzo IP">
+    <input type="text" name="nickname" placeholder="Inserisci il tuo nome">
+    <input type="button" value="CONNETTI" onclick="connetti()">
+
+    <!-- Container dei nickname -->
+    <div class="container">
+
+    </div>
+
+</body>
+</html>
