@@ -1,0 +1,7 @@
+SCHEMA LOGICO:
+Navi (CodiceNave, NomeNave, Stazza, Lunghezza, AnnoDiCostruzione, PotenzaMotori)
+Porti (CodicePorto, NomePorto)
+Personale (CodiceFiscale, NomePersonale, CognomePersonale, LuogoDiNascita, DataDiNascita)
+Messaggi (ID_messaggio, Latitudine, Longitudine, Direzione, Velocità, DataMessagio, OraMessagio, NoteDelCapitano, ID_viaggio)
+Viaggi (ID_viaggio, DataPartenza, OraPartenza, DataArrivo, OraArrivo, PesoTotale, CodiceNave, CodicePorto)
+Presente (CodiceFiscale, ID_viaggio, Ruolo)

@@ -1,0 +1,21 @@
+./mysql -u root --> Avvio il servizio
+
+show databases; --> Mostra i databse esistenti
+
+drop {nomeDatabase} --> Elimina il database (ATTENZIONE, non viene richiesta la conferma prima di eliminare!)
+
+create database if not exists {nomeDatabase} --> Crea ilo database (se non è gia esistente)
+
+use {nomeDatabase} --> Seleziona il database indicato
+
+show table --> Mostra le tabelle del database in uso
+
+describe {nomeTabella} --> Mostra la tabella
+
+alter name {nomeTabella} rename {nuovoNome} --> Rinomina la tabella
+
+ALTER TABLE {nomeTabella} CHANGE {nomeCampo} {nuovoNome} {nuovoTipo} --> Cambio il noome / tipo di un campo della tabella
+
+ALTER TABLE {nomeTabella} ADD {nomeCampo} {tipo} NOT NULL --> Aggiungo un campo alla tabella
+
+ALTER TABLE {nomeTabella} DROP {nomeCampo} --> Elimino un campo dalla tabella
