@@ -19,4 +19,4 @@
   -  10 Ripetere la procedura dai passaggi 7 a 9 per l'interfaccia `GigabitEthernet 0/1`
 
 # SIMULAZIONE ACL Standard V2
-## - Modificare inoltre l'esercizio n.1 sulla ACL standard in modo da specificare una regola che impedisca il traffico dalla LAN ospiti alla LAN utenti (specificare questa volta l'IP di rete sorgente di OSPITI o UTENTE) piuttosto che l'IP di AMMINISTRAZIONE). 
+### Modificare inoltre l'esercizio n.1 sulla ACL standard in modo da specificare una regola che impedisca il traffico dalla LAN ospiti alla LAN utenti (specificare questa volta l'IP di rete sorgente di OSPITI o UTENTE) piuttosto che l'IP di AMMINISTRAZIONE). 
