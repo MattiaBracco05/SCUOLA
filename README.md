@@ -106,7 +106,7 @@
 <h4>Software e programmi:</h4>
 <p align="left">
   <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="gitlab" width="40" height="40"/>
-  <img src="https://www.lffl.org/wp-content/uploads/2016/09/raspberry-pi-logo.png" alt="raspberry" width="40" height="40"/>
+  <img src="https://logowik.com/content/uploads/images/346_raspberry_pi_logo.jpg" alt="raspberry" width="50" height="40"/>
 </p>
 
 ```
