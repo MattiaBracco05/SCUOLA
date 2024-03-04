@@ -30,6 +30,7 @@
   -  5 Digitare `ip nat inside source static {indirizzo IP} {nuovo IP}` ad esempio `ip nat inside source static 192.168.1.1 209.165.200.254`
 
 # SIMULAZIONE NAT CON 2 ROUTER
+## - Simulazione settaggio NAT con 2 router
 ## `Comandi`
 ### - Impostare la rotta sul 2° router:
   -  1 Cliccare sul router
