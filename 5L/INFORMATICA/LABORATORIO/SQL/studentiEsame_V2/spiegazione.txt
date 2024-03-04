@@ -1,0 +1,17 @@
+INSERIMENTO DEI DATI:
+-- UPDATE:
+Questa query mi permette di andare ad aggiornare dei dati secondo una condizione che specifico dopo il comando "WHERE"
+
+-- ON DUPLICATE KEY UPDATE:
+Dal momento che vado usare "ON DUPLICATE KEY UPDATE" su una "INSERT" che cerca di inserire una chiave già esistente --> nella tabella mi aggiorna solo i valori che gli indico
+
+-- REPLACE:
+La differenza rispetto a prima è che io con la "REPLACE" vado subito a sostituire i valori che voglio di una determinata tabella senza andarmi a chiedere prima di inserire un valore con la "INSERT" se è già presente una chiave con il valore indicato
+
+MODIFICA DEI DATI:
+Non succede nulla semplicemente lo aggiorna con gli stessi dati
+
+CANCELLAZIONE DEI DATI (con e senza vincoli):
+Dal momento che sulla foreign key abbiamo messo "ON DELETE CASCADE" --> verranno eliminate anche tutte le associazioni nelle altre tabelle
+Altrimenti (senza "ON DELETE CASCADE") --> errore sulla foreign key
+Dal momento che elimino luca verdi --> viene eliminata tutta la sua riga
