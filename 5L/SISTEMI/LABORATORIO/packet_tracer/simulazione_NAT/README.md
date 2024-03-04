@@ -31,4 +31,4 @@
 ### - Impostare la rotta sul 2° router:
   -  1 Cliccare sul router
   -  2 Cliccare su `Config`
-  -  3 Impostare la rotta della rete del NAT ad esempio `Network: 200.100.10.0, Mask: 255.255.255.0, Next Hop: 200.100.10.1`
+  -  3 Impostare la rotta della rete del NAT ad esempio `Network: 200.100.10.0, Mask: 255.255.255.0, Next Hop: 200.200.200.1`
