@@ -28,3 +28,7 @@
   -  3 Digitare `enable` per entrare in modalità privilegiata
   -  4 Digitare `conf t` per entrare in modalita di configurazione
   -  5 Digitare `ip nat inside source static {indirizzo IP} {nuovo IP}` ad esempio `ip nat inside source static 192.168.1.1 209.165.200.254`
+### - Impostare la rotta sul 2° router:
+  -  1 Cliccare sul router
+  -  2 Cliccare su `Config`
+  -  3 Impostare la rotta della rete del NAT ad esempio `Network: 200.100.10.0, Mask: 255.255.255.0, Next Hop: 200.100.10.1`
