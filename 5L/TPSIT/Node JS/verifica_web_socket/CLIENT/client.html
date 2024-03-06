@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5L Bracco Magazzino</title>
+    <!-- Inizio dello style CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        input[type="text"], button {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="number"], button {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        #formProdotti {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        #operatori, #prodotti {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+    <!-- Fine dello style CSS -->
+</head>
+
+
+<body>
+    <!-- Inizio del container -->
+    <div id="container">
+        <h1>Magazzino</h1>
+        <!-- Input text per l'indirizzo IP -->
+        <input type="text" id="serverAddress" placeholder="Indirizzo IP (solo IP)">
+        <!-- Input text per il nome dell'operatore -->
+        <input type="text" id="nomeOperatore" placeholder="Nome Operatore">
+        <!-- Button per connettersi al server -->
+        <button onclick="connettiServer()">Connetti al magazzino</button>
+
+        <!-- Inizio campi per aggiungere un prodotto -->
+        <div id="formProdotti">
+            <h2>Aggiungi prodotto</h2>
+
+            <!-- Label nome prodotto -->
+            <label for="nomeProdotto">Nome Prodotto:</label>
+            <!-- Input text per il nome del prodotto -->
+            <input type="text" id="nomeProdotto" placeholder="Inserisci il nome"><br>
+
+            <!-- Label descrizione prodotto -->
+            <label for="descrizioneProdotto">Descrizione Prodotto:</label>
+            <!-- Input text descrizione prodotto -->
+            <input type="text" id="descrizioneProdotto" placeholder="Inserisci la descrizione"><br>
+
+            <!-- Label ubicazione prodotto -->
+            <label for="ubicazioneProdotto">Ubicazione Prodotto:</label>
+            <!-- Input text ubicazione prodotto -->
+            <input type="text" id="ubicazioneProdotto" placeholder="Inserisci l'ubicazione"><br>
+
+            <!-- Label prezzo prodotto -->
+            <label for="prezzoProdotto">Prezzo Prodotto:</label>
+            <!-- Input number prezzo prodotto -->
+            <input type="number" id="prezzoProdotto" value="0"><br>
+            
+            <!-- Label quantità prodotto -->
+            <label for="qtaProdotto">Quantità Prodotto:</label>
+            <!-- Input number quantità prodotto -->
+            <input type="number" id="qtaProdotto" value="0"><br>
+
+            <!-- Button per aggiungere il prodotto -->
+            <button onclick="aggiungiProdotto()">Aggiungi Prodotto</button>
+        </div>
+        <!-- Fine campi per aggiungere un prodotto -->
+
+        <!-- Inizio <div> prodotti caricati -->
+        <div>
+            <h2>Prodotti caricati</h2>
+            <ul id="prodotti"></ul>
+        </div>
+        <!-- Fine <div> prodotti caricati -->
+
+        <!-- Inizio <div> operatori collegati -->
+        <div>
+            <h2>Operatori collegati</h2>
+            <ul id="operatori"></ul>
+        </div>
+        <!-- Fine <div> operatori collegati -->
+    
+        <!-- Inizio ricerca prodotti -->
+        <div id="formRicerca">
+            <h2>Ricerca prodotto</h2>
+            <!-- Label nome da cercare -->
+            <label for="nomeRicerca">Prodotto da cercare:</label>
+            <!-- Input text per il nome da cercare -->
+            <input type="text" id="nomeRicerca" placeholder="Inserisci il nome da cercare"><br>
+            <!-- Button per cercare -->
+            <button onclick="cercaProdotto()">Cerca</button>
+        </div>
+        <!-- Fine ricerca prodotti -->
+
+    </div>
+    <!-- Fine del container -->
+
+    <!-- CDN di socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    
+    <!-- Inizio dello script JavaScript -->
+    <script>
+        let socket;
+
+        //Funzione per connettersi al server
+        function connettiServer() {
+
+            //Ricavo l'indirizzo IP del server
+            const serverAddress = document.getElementById('serverAddress').value;
+            //Ricavo il nome dell'operatore
+            const nomeOperatore = document.getElementById('nomeOperatore').value;
+
+            //Controllo che i campi non siano stati lasciati vuoti (se è così --> messaggio di erroree)
+            if (serverAddress === "" || nomeOperatore === "") {
+                alert("Assicurati di inserire l'indirizzo IP e il tuo nome");
+                return;
+            }
+
+            //Connetto al socket
+            socket = io.connect(`http://${serverAddress}:3000`);
+            socket.on('connect', () => {
+                console.log('Connesso al server');
+                document.getElementById('formProdotti').style.display = 'block';
+            });
+
+            //Mostro i prodotti caricati
+            socket.on('listaProdotti', (prodotti) => {
+                visualizzaProdotti(prodotti);
+                //Notifico l'operatore quando vengono modificati dei prodotti
+                alert("Alcuni prodotti sono stati aggiornati");
+            });
+
+            //Mostro gli operatori collegati
+            socket.on('listaOperatori', (operatori) => {
+                visualizzaOperatori(operatori);
+                alert("Nuovo operatore connesso, operatore: " + operatori[operatori.length - 1]);
+            });
+
+            //Aggiungo il nome della connessione appena effettuata
+            socket.emit('aggiungiNome', nomeOperatore);
+        }
+
+        //Funzione per aggiungere un prodotto
+        function aggiungiProdotto() {
+            //Ricavo il nome
+            const nomeProdotto = document.getElementById('nomeProdotto').value;
+            //Ricavo la descrizione
+            const descrizioneProdotto = document.getElementById('descrizioneProdotto').value;
+            //Ricavo l'ubicazione
+            const ubicazioneProdotto = document.getElementById('ubicazioneProdotto').value;
+            //Ricavo il prezzo
+            const prezzoProdotto = document.getElementById('prezzoProdotto').value;
+            //Ricavo la quantità
+            const qtaProdotto = document.getElementById('qtaProdotto').value;
+
+            //Controllo che i campi non siano stati lasciati vuoti (se è così --> messaggio di erroree)
+            if (nomeProdotto === "" || descrizioneProdotto === "" || ubicazioneProdotto === "" || prezzoProdotto === 0 || qtaProdotto === 0) {
+                alert("Assicurati di compilare tutti i campi del prodotto");
+                return;
+            }
+            //Altrimenti --> creo il prodotto
+            else {
+                //Creo il prodotto con le sue caratteristiche
+                const prodotto = {
+                    nome: nomeProdotto,
+                    descrizione: descrizioneProdotto,
+                    ubicazione: ubicazioneProdotto,
+                    prezzo: prezzoProdotto,
+                    quantita: qtaProdotto,
+                };
+
+                //Aggiugno il prodotto
+                socket.emit('aggiungiProdotto', prodotto);
+            }
+        }
+
+        //Funzione per eliminare un prodotto
+        function eliminaProdotto(index) {
+            //Elimino il prdotto (identificato dall'index)
+            socket.emit('eliminaProdotto', index);
+        }
+
+        //Funzione per mostrare i prodotti caricati
+        function visualizzaProdotti(prodotti) {
+            //Ricavo la lista dei prodotti
+            const listaProdotti = document.getElementById('prodotti');
+            //Effettuo l'inner.HTML dei prodotti
+            listaProdotti.innerHTML = '';
+
+            //Ciclo for each --> stampo i prodotti (con a fianco un button per poterli eliminare)
+            prodotti.forEach((prodotto, index) => {
+                //Creo un item per ogni prodotto
+                const listItem = document.createElement('li');
+                //Assegno all'item i dati del prodotto
+                listItem.innerHTML = `
+                    <span>Nome: ${prodotto.nome} | Descrizione: ${prodotto.descrizione} | Ubicazione: ${prodotto.ubicazione} | ${prodotto.prezzo}€ | Qta: ${prodotto.quantita} || Operatore: ${prodotto.operator}</span>
+                    <button onclick="eliminaProdotto(${index})">Elimina</button>
+                `;
+                //Effettuo l'appendChild dell'item appena creato nella lista dei prodotti
+                listaProdotti.appendChild(listItem);
+            });
+        }
+
+        //Funzione per mostrare gli operatori collegati
+        function visualizzaOperatori(operatori) {
+            //Ricavo la lista degli operatori
+            const listaOperatoriCollegati = document.getElementById('operatori');
+            //Effettuo l'inner.HTML degli operatori
+            listaOperatoriCollegati.innerHTML = '';
+
+            //Ciclo for each --> stampo i nomi degli operatori
+            operatori.forEach(operator => {
+                //Creo un item per ogni operatore
+                const listItem = document.createElement('li');
+                //Assegno all'item il nome dell'operatore
+                listItem.textContent = operator;
+                //Effettuo l'appendChild dell'item appena creato nella lista degli operatori
+                listaOperatoriCollegati.appendChild(listItem);
+            });
+        }
+
+        //Funzione per cercare un prodottos
+        function cercaProdotto() {
+            //Ricavo il nome da cercare
+            const nomeDaCercare = document.getElementById('nomeRicerca').value;
+            alert("Effettuo una ricerca del prodotto: " + nomeDaCercare);
+
+            //Ricavo la lista dei prodotti
+            /*
+                dopo aver ricavato la lista dei prodotti (tramite un socket.emit) cerco con una funzione find() all'interno dell'array
+                il prodotto che ha il nome che corrisponde a quello inserito
+                Se lo trovo --> stampo il prodotto trovato nell'alert
+                Se non lo trovo --> stampo un alert dove dico che non ho trovato il prodotto
+            */
+        }
+    </script>
+    <!-- Fine dello script JavaScript -->
+</body>
+</html>
