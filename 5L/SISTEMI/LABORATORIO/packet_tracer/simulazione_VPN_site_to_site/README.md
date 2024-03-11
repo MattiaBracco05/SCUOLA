@@ -13,7 +13,7 @@
 - 4 Digitare `license boot module c2900 technology-package securityko`
 - 5 Digitare `exit` per uscire
 - 6 Digitare `copy running-config startup-config` (`INVIO` per confermare)
-- 7 Digitare `reload` per riavviare il router (`INVIO per confermare`)
+- 7 Digitare `reload` per riavviare il router (`INVIO` per confermare)
 ### - Configurare l'access list (su R1):
 - 1 Cliccare sul router
 - 2 Digitare `enable`
