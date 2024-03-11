@@ -18,7 +18,7 @@
 - 1 Cliccare sul router
 - 2 Digitare `enable`
 - 3 Digitare `conf t`
-- 4 Digitare `access-list {numACL} {permit/deny} ip {IP sorgennte} {white card} {IP destinazione} {white card}` ad esempio `access-list 110 permit ip 192.168.1.0 0.0.0.255 192.168.3.0 0.0.0.255`
+- 4 Digitare `access-list {numero ACL} {permit/deny} ip {IP sorgennte} {white card} {IP destinazione} {white card}` ad esempio `access-list 110 permit ip 192.168.1.0 0.0.0.255 192.168.3.0 0.0.0.255`
 ### - Configurazione della Fase-1 (su R1):
 - 1 Cliccare sul router
 - 2 Digitare `enable`
