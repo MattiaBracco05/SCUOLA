@@ -44,3 +44,10 @@
 - 9 Digitare `set transform-set VPN-SET`
 - 10 Digitare `match address 110`
 - 11 Digitare `exit`
+## - Associare la VPN con l’interfaccia seriale s0/0/0 (su R1):
+- 1 Cliccare sul router
+- 2 Andare sulla scheda `CLI`
+- 3 Digitare `enable`
+- 4 Digitare `conf t`
+- 5 Digitare `interface S0/0/0`
+- 6 Digitare `crypto map VPN-MAP`
