@@ -1,2 +1,2 @@
 <h1 align="center">TPSIT 🖥️📱</h1>
-<img align="right" alt="Coding" width="100%" src="https://www.innovect.com/wp-content/uploads/2023/02/futuristic-robot-artificial-intelligence-huminoid-ai-programming-coding_31965-58528.jpg">
+<img align="right" alt="Coding" width="100%" src="https://github.com/MattiaBracco05/SCUOLA/blob/22958a77a511d4d67aec51a20cf0030a1d23b1a2/__assets__/homeTPSIT.jpeg">
