@@ -1,1 +1,1 @@
-# Unita di apprendimento 2 - Elementi di organizzazione aziendale
+# Unità di apprendimento 2 - Elementi di organizzazione aziendale
