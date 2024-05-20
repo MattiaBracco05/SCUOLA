@@ -5,5 +5,5 @@
 |----|-----|
 |Lezione_1|L'organizzazione in azienda|
 |Lezione_2|I processi aziendali|
-|Lezione_3|(Pre-progetto) Fattibilità e analisi dei requisiti|
+|Lezione_3|Il ruolo delle tecnologie informatiche|
 |Lezione_4|La valutazione della qualità del software|
