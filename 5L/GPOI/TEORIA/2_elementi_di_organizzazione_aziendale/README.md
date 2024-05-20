@@ -6,4 +6,4 @@
 |Lezione_1|L'organizzazione in azienda|
 |Lezione_2|I processi aziendali|
 |Lezione_3|Il ruolo delle tecnologie informatiche nell'organizzazione dei processi|
-|Lezione_4|La valutazione della qualità del software|
+|Lezione_4|ERP (Enterprise Resource Planning)|
