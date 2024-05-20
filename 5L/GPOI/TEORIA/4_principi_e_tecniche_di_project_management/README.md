@@ -4,4 +4,4 @@
 |File|Argomento|
 |----|-----|
 |Lezione_1|Il progetto e le sue fasi|
-|Lezione_5|Il processo di produzione di software|
+|Lezione_5|Analisi dei costi di un progetto informatico e Risk Management|
