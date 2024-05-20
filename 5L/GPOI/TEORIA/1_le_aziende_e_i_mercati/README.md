@@ -3,6 +3,6 @@
 
 |File|Argomento|
 |----|-----|
-|Lezione_1|I progetti informatici|
-|Lezione_2|Il processo di produzione di software|
-|Lezione_3|(Pre-progetto) Fattibilità e analisi dei requisiti|
+|Lezione_1|L'azienda e le sue attività|
+|Lezione_2|I costi aziendali|
+|Lezione_3|Il modello microeconomico|
