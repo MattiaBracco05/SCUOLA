@@ -1,0 +1,62 @@
+[
+  {
+    "squadra1": {
+      "immagine": "https://flagpedia.net/data/flags/h80/it.png",
+      "nomenazione": "Italia",
+      "punteggio": 3
+    },
+    "squadra2": {
+      "immagine": "https://flagpedia.net/data/flags/h80/fr.png",
+      "nomenazione": "Francia",
+      "punteggio": 2
+    }
+  },
+  {
+    "squadra1": {
+      "immagine": "https://flagpedia.net/data/flags/h80/de.png",
+      "nomenazione": "Germania",
+      "punteggio": 1
+    },
+    "squadra2": {
+      "immagine": "https://flagpedia.net/data/flags/h80/es.png",
+      "nomenazione": "Spagna",
+      "punteggio": 1
+    }
+  },
+  {
+    "squadra1": {
+      "immagine": "https://flagpedia.net/data/flags/h80/gb.png",
+      "nomenazione": "Inghilterra",
+      "punteggio": 0
+    },
+    "squadra2": {
+      "immagine": "https://flagpedia.net/data/flags/h80/br.png",
+      "nomenazione": "Brasile",
+      "punteggio": 2
+    }
+  },
+  {
+    "squadra1": {
+      "immagine": "https://flagpedia.net/data/flags/h80/ar.png",
+      "nomenazione": "Argentina",
+      "punteggio": 4
+    },
+    "squadra2": {
+      "immagine": "https://flagpedia.net/data/flags/h80/pt.png",
+      "nomenazione": "Portogallo",
+      "punteggio": 3
+    }
+  },
+  {
+    "squadra1": {
+      "immagine": "https://flagpedia.net/data/flags/h80/us.png",
+      "nomenazione": "Stati Uniti",
+      "punteggio": 1
+    },
+    "squadra2": {
+      "immagine": "https://flagpedia.net/data/flags/h80/mx.png",
+      "nomenazione": "Messico",
+      "punteggio": 3
+    }
+  }
+]
