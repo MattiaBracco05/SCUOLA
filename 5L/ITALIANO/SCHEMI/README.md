@@ -9,4 +9,4 @@ Ordine degli autori:
 * Tommaso Marinetti
 * Giuseppe Ungaretti
 * Eugenio Montale
-* Quasimodo
+* Salvatore Quasimodo
