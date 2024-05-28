@@ -23,5 +23,30 @@
     "nome": "prodotto5",
     "descrizione": "desrizione5",
     "costo": 5
+  },
+  {
+    "nome": "prodotto6",
+    "descrizione": "desrizione6",
+    "costo": 6
+  },
+  {
+    "nome": "prodotto7",
+    "descrizione": "desrizione7",
+    "costo": 7
+  },
+  {
+    "nome": "prodotto8",
+    "descrizione": "desrizione8",
+    "costo": 8
+  },
+  {
+    "nome": "prodotto9",
+    "descrizione": "desrizione9",
+    "costo": 9
+  },
+  {
+    "nome": "prodotto10",
+    "descrizione": "desrizione10",
+    "costo": 10
   }
 ]
