@@ -2,51 +2,61 @@
   {
     "nome": "prodotto1",
     "descrizione": "desrizione1",
-    "costo": 1
+    "costo": 1,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto2",
     "descrizione": "desrizione2",
-    "costo": 2
+    "costo": 2,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto3",
     "descrizione": "desrizione3",
-    "costo": 3
+    "costo": 3,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto4",
     "descrizione": "desrizione4",
-    "costo": 4
+    "costo": 4,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto5",
     "descrizione": "desrizione5",
-    "costo": 5
+    "costo": 5,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto6",
     "descrizione": "desrizione6",
-    "costo": 6
+    "costo": 6,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto7",
     "descrizione": "desrizione7",
-    "costo": 7
+    "costo": 7,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto8",
     "descrizione": "desrizione8",
-    "costo": 8
+    "costo": 8,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto9",
     "descrizione": "desrizione9",
-    "costo": 9
+    "costo": 9,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   },
   {
     "nome": "prodotto10",
     "descrizione": "desrizione10",
-    "costo": 10
+    "costo": 10,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgA08z1FDEYuumwqZhjB1g0UT1xlDie3d1hO3i9lsZQ&s"
   }
 ]
