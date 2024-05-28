@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "prodotto1",
+    "descrizione": "desrizione1",
+    "costo": 1
+  },
+  {
+    "nome": "prodotto2",
+    "descrizione": "desrizione2",
+    "costo": 2
+  },
+  {
+    "nome": "prodotto3",
+    "descrizione": "desrizione3",
+    "costo": 3
+  },
+  {
+    "nome": "prodotto4",
+    "descrizione": "desrizione4",
+    "costo": 4
+  },
+  {
+    "nome": "prodotto5",
+    "descrizione": "desrizione5",
+    "costo": 5
+  }
+]
